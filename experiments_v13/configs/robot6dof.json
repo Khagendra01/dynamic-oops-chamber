@@ -1,0 +1,237 @@
+{
+  "robot": {
+    "name": "oops6_default",
+    "joint_count": 6,
+    "joint_types": [
+      "revolute",
+      "revolute",
+      "revolute",
+      "revolute",
+      "revolute",
+      "revolute"
+    ],
+    "joints": [
+      {
+        "name": "J1_base_yaw",
+        "origin": [
+          0.0,
+          0.0,
+          0.09
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limit_lo": -3.141592653589793,
+        "limit_hi": 3.141592653589793,
+        "velocity_limit": 1.2,
+        "acceleration_limit": 4.0
+      },
+      {
+        "name": "J2_shoulder_pitch",
+        "origin": [
+          0.0,
+          0.0,
+          0.1
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "limit_lo": -2.6,
+        "limit_hi": 2.6,
+        "velocity_limit": 1.2,
+        "acceleration_limit": 4.0
+      },
+      {
+        "name": "J3_elbow_pitch",
+        "origin": [
+          0.0,
+          0.0,
+          0.3
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "limit_lo": -2.6,
+        "limit_hi": 2.6,
+        "velocity_limit": 1.5,
+        "acceleration_limit": 6.0
+      },
+      {
+        "name": "J4_wrist_roll",
+        "origin": [
+          0.0,
+          0.0,
+          0.25
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limit_lo": -3.141592653589793,
+        "limit_hi": 3.141592653589793,
+        "velocity_limit": 2.0,
+        "acceleration_limit": 8.0
+      },
+      {
+        "name": "J5_wrist_pitch",
+        "origin": [
+          0.0,
+          0.0,
+          0.06
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "limit_lo": -2.2,
+        "limit_hi": 2.2,
+        "velocity_limit": 2.0,
+        "acceleration_limit": 8.0
+      },
+      {
+        "name": "J6_wrist_roll2",
+        "origin": [
+          0.0,
+          0.0,
+          0.05
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "limit_lo": -3.141592653589793,
+        "limit_hi": 3.141592653589793,
+        "velocity_limit": 2.5,
+        "acceleration_limit": 10.0
+      }
+    ],
+    "links": [
+      {
+        "name": "L0_pedestal",
+        "drive_joint": -1,
+        "local_center": [
+          0.0,
+          0.0,
+          0.045
+        ],
+        "local_half_extents": [
+          0.05,
+          0.05,
+          0.045
+        ]
+      },
+      {
+        "name": "L1_column",
+        "drive_joint": 0,
+        "local_center": [
+          0.0,
+          0.0,
+          0.05
+        ],
+        "local_half_extents": [
+          0.045,
+          0.045,
+          0.05
+        ]
+      },
+      {
+        "name": "L2_upper_arm",
+        "drive_joint": 1,
+        "local_center": [
+          0.0,
+          0.0,
+          0.15
+        ],
+        "local_half_extents": [
+          0.026,
+          0.026,
+          0.15
+        ]
+      },
+      {
+        "name": "L3_forearm",
+        "drive_joint": 2,
+        "local_center": [
+          0.0,
+          0.0,
+          0.125
+        ],
+        "local_half_extents": [
+          0.023,
+          0.023,
+          0.125
+        ]
+      },
+      {
+        "name": "L4_wrist1",
+        "drive_joint": 3,
+        "local_center": [
+          0.0,
+          0.0,
+          0.03
+        ],
+        "local_half_extents": [
+          0.02,
+          0.02,
+          0.03
+        ]
+      },
+      {
+        "name": "L5_wrist2",
+        "drive_joint": 4,
+        "local_center": [
+          0.0,
+          0.0,
+          0.025
+        ],
+        "local_half_extents": [
+          0.018,
+          0.018,
+          0.025
+        ]
+      },
+      {
+        "name": "L6_gripper",
+        "drive_joint": 5,
+        "local_center": [
+          0.0,
+          0.0,
+          0.035
+        ],
+        "local_half_extents": [
+          0.016,
+          0.016,
+          0.035
+        ]
+      }
+    ],
+    "tool_offset": [
+      0.0,
+      0.0,
+      0.07
+    ],
+    "base_position": [
+      0.5,
+      0.5,
+      0.02
+    ],
+    "chamber_size": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "metadata": {
+      "family": "anthropomorphic",
+      "dof": 6
+    }
+  }
+}

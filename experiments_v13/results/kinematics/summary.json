@@ -1,0 +1,16 @@
+{
+  "frames": 289,
+  "duration_s": 28.8,
+  "ee_min": [
+    0.0627,
+    0.3888,
+    -0.3441
+  ],
+  "ee_max": [
+    1.2215,
+    0.643,
+    0.94
+  ],
+  "deterministic_ee": true,
+  "max_reach_bound_m": 0.92
+}
