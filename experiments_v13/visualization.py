@@ -61,7 +61,7 @@ def draw_scene(ax, spec: RobotSpec, q: Sequence[float], *,
     # links
     colors = plt.cm.viridis(np.linspace(0.15, 0.85, len(spec.links)))
     for link, color in zip(spec.links, colors):
-        frame = pose.frames[link.drive_joint if link.drive_joint >= 0 else 0]
+        frame = pose.frames[link.drive_joint + 1 if link.drive_joint >= 0 else 0]
         world = link_corners_world(link, frame)
         coll = Poly3DCollection(_cuboid_faces(world), alpha=0.55,
                                 facecolor=color, edgecolor="k", lw=0.35)

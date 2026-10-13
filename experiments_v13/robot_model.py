@@ -248,17 +248,18 @@ class RobotSpec:
             # required — use world-frame zero-configuration distances from the
             # joint origin to the point, which bound rotation displacement.
             fk0 = zero_pose_frames(self)  # cheap; cached per spec in hot path by caller
-            joint_origin = fk0[j][:3, 3]
+            joint_origin = fk0[j + 1][:3, 3]
             for link in self.links:
                 if link.drive_joint < j and link.drive_joint != -1:
                     continue
                 if link.drive_joint == -1 and j >= 0:
                     # base body does not move with any joint
                     continue
-                corners = link_corners_world(link, fk0[link.drive_joint if link.drive_joint >= 0 else 0])
+                frame_index = link.drive_joint + 1 if link.drive_joint >= 0 else 0
+                corners = link_corners_world(link, fk0[frame_index])
                 for corner in corners:
                     worst = max(worst, float(np.linalg.norm(corner - joint_origin)))
-            tool_world = transform_point(fk0[n - 1] @ self.tool_transform, (0, 0, 0))
+            tool_world = transform_point(fk0[n] @ self.tool_transform, (0, 0, 0))
             worst = max(worst, float(np.linalg.norm(tool_world - joint_origin)))
             levers[j] = max(worst, 1e-6)
         return levers

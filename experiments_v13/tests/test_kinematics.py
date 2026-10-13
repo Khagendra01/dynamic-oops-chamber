@@ -187,7 +187,7 @@ class TestForwardKinematics(unittest.TestCase):
         for label, q in postures.items():
             pose = forward_pose(spec, q)
             for link in spec.links:
-                frame = pose.frames[link.drive_joint if link.drive_joint >= 0 else 0]
+                frame = pose.frames[link.drive_joint + 1 if link.drive_joint >= 0 else 0]
                 corners = link_corners_world(link, frame)
                 self.assertTrue(np.all(corners >= -1e-9),
                                 f"{link.name} below floor at {label}")

@@ -80,7 +80,8 @@ def link_world_corners(spec: RobotSpec, pose: RobotPose) -> dict[str, np.ndarray
     from experiments_v13.robot_model import link_corners_world
     out: dict[str, np.ndarray] = {}
     for link in spec.links:
-        frame_index = link.drive_joint if link.drive_joint >= 0 else 0
+        # frames[0] is the base; joint j's link frame is frames[j + 1]
+        frame_index = link.drive_joint + 1 if link.drive_joint >= 0 else 0
         out[link.name] = link_corners_world(link, pose.frames[frame_index])
     return out
 
@@ -88,7 +89,7 @@ def link_world_corners(spec: RobotSpec, pose: RobotPose) -> dict[str, np.ndarray
 def link_world_centers(spec: RobotSpec, pose: RobotPose) -> dict[str, Vec3]:
     out: dict[str, Vec3] = {}
     for link in spec.links:
-        frame_index = link.drive_joint if link.drive_joint >= 0 else 0
+        frame_index = link.drive_joint + 1 if link.drive_joint >= 0 else 0
         center = transform_point(pose.frames[frame_index], link.local_center)
         out[link.name] = center
     return out
