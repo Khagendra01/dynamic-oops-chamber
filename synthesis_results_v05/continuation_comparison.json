@@ -1,0 +1,199 @@
+{
+  "full_replay": [
+    {
+      "task": "empty",
+      "success": true,
+      "rules": [
+        "GOAL"
+      ],
+      "simulated_steps": 372,
+      "reused_steps": 0,
+      "evaluations": 10,
+      "modeled_work": 343
+    },
+    {
+      "task": "static",
+      "success": true,
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "simulated_steps": 743,
+      "reused_steps": 0,
+      "evaluations": 26,
+      "modeled_work": 4056
+    },
+    {
+      "task": "north_blocked",
+      "success": true,
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "simulated_steps": 9,
+      "reused_steps": 0,
+      "evaluations": 1,
+      "modeled_work": 92
+    },
+    {
+      "task": "south_blocked",
+      "success": true,
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "simulated_steps": 9,
+      "reused_steps": 0,
+      "evaluations": 1,
+      "modeled_work": 92
+    },
+    {
+      "task": "crossing",
+      "success": true,
+      "rules": [
+        "WAIT_GAP",
+        "CALL:P002"
+      ],
+      "simulated_steps": 7969,
+      "reused_steps": 0,
+      "evaluations": 598,
+      "modeled_work": 47617
+    },
+    {
+      "task": "moving_gate",
+      "success": true,
+      "rules": [
+        "WAIT_GAP",
+        "CALL:P002"
+      ],
+      "simulated_steps": 8,
+      "reused_steps": 0,
+      "evaluations": 1,
+      "modeled_work": 92
+    },
+    {
+      "task": "moving",
+      "success": true,
+      "rules": [
+        "WAIT_GAP",
+        "CALL:P002"
+      ],
+      "simulated_steps": 13,
+      "reused_steps": 0,
+      "evaluations": 1,
+      "modeled_work": 185
+    },
+    {
+      "task": "efficient_empty",
+      "success": true,
+      "rules": [
+        "CONTINUE",
+        "CALL:P003"
+      ],
+      "simulated_steps": 9652,
+      "reused_steps": 0,
+      "evaluations": 495,
+      "modeled_work": 66774
+    }
+  ],
+  "continuation": [
+    {
+      "task": "empty",
+      "success": true,
+      "rules": [
+        "GOAL"
+      ],
+      "simulated_steps": 372,
+      "reused_steps": 0,
+      "evaluations": 10,
+      "modeled_work": 343
+    },
+    {
+      "task": "static",
+      "success": true,
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "simulated_steps": 716,
+      "reused_steps": 27,
+      "evaluations": 26,
+      "modeled_work": 4056
+    },
+    {
+      "task": "north_blocked",
+      "success": true,
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "simulated_steps": 9,
+      "reused_steps": 0,
+      "evaluations": 1,
+      "modeled_work": 92
+    },
+    {
+      "task": "south_blocked",
+      "success": true,
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "simulated_steps": 9,
+      "reused_steps": 0,
+      "evaluations": 1,
+      "modeled_work": 92
+    },
+    {
+      "task": "crossing",
+      "success": true,
+      "rules": [
+        "WAIT_GAP",
+        "CALL:P002"
+      ],
+      "simulated_steps": 4065,
+      "reused_steps": 271,
+      "evaluations": 598,
+      "modeled_work": 47617
+    },
+    {
+      "task": "moving_gate",
+      "success": true,
+      "rules": [
+        "WAIT_GAP",
+        "CALL:P002"
+      ],
+      "simulated_steps": 8,
+      "reused_steps": 0,
+      "evaluations": 1,
+      "modeled_work": 92
+    },
+    {
+      "task": "moving",
+      "success": true,
+      "rules": [
+        "WAIT_GAP",
+        "CALL:P002"
+      ],
+      "simulated_steps": 13,
+      "reused_steps": 0,
+      "evaluations": 1,
+      "modeled_work": 185
+    },
+    {
+      "task": "efficient_empty",
+      "success": true,
+      "rules": [
+        "CONTINUE",
+        "CALL:P003"
+      ],
+      "simulated_steps": 3234,
+      "reused_steps": 210,
+      "evaluations": 495,
+      "modeled_work": 66774
+    }
+  ],
+  "simulated_steps_full_replay": 18775,
+  "simulated_steps_continuation": 8426,
+  "steps_reused": 508
+}

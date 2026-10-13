@@ -1,0 +1,30 @@
+{
+  "version": "v1.0",
+  "device": "cpu",
+  "gpu_name": null,
+  "pytorch": "2.10.0+cpu",
+  "dtype": "float64",
+  "num_scenes": 100,
+  "seed_start": 100,
+  "num_batches": 1,
+  "elapsed_s": 0.785765,
+  "success": 97,
+  "collisions": 3,
+  "interventions": 3,
+  "simulated_steps": 1287,
+  "runs": [
+    {
+      "batch_scenes": 100,
+      "success": 97,
+      "collisions": 3,
+      "interventions": 3,
+      "simulated_steps": 1287,
+      "elapsed_s": 0.785765
+    }
+  ],
+  "notes": [
+    "Elapsed time excludes scene construction and TorchChamberBatch initialization.",
+    "Contains interpreted Torch primitives rather than original OOPS program synthesis.",
+    "Simulation uses exact geometric state and conservative sphere/AABB collision geometry."
+  ]
+}

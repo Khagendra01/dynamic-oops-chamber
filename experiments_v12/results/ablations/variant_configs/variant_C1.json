@@ -1,0 +1,17 @@
+{
+  "id": "C1",
+  "label": "minimal baseline",
+  "reuse": false,
+  "cumulative": false,
+  "memory": false,
+  "note": "All three factors off; not a single-factor comparison.",
+  "factors": {
+    "reuse": false,
+    "cumulative": false,
+    "memory": false
+  },
+  "controlled_constants": [
+    "conditional_geometric_branching",
+    "live_replanning"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "C4",
+  "label": "stateless runtime",
+  "reuse": true,
+  "cumulative": true,
+  "memory": false,
+  "note": "Isolates persistent runtime memory (C5 vs C4).",
+  "factors": {
+    "reuse": true,
+    "cumulative": true,
+    "memory": false
+  },
+  "controlled_constants": [
+    "conditional_geometric_branching",
+    "live_replanning"
+  ]
+}

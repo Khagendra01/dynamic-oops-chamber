@@ -1,0 +1,31 @@
+{
+  "seeds": [
+    100,
+    199
+  ],
+  "methods": {
+    "v02": {
+      "episodes": 100,
+      "successes": 76,
+      "collisions": 24,
+      "shield_interventions": 24,
+      "mean_steps_success_only": 12.131578947368421,
+      "mean_work_units_all": 88.02,
+      "fallback_waits_all": 30,
+      "explicit_waits_all": 0,
+      "continued_actions_all": 0
+    },
+    "v03": {
+      "episodes": 100,
+      "successes": 97,
+      "collisions": 3,
+      "shield_interventions": 3,
+      "mean_steps_success_only": 13.041237113402062,
+      "mean_work_units_all": 77.81,
+      "fallback_waits_all": 3,
+      "explicit_waits_all": 40,
+      "continued_actions_all": 1077
+    }
+  },
+  "limitations": "Small deterministic chambers; perfect observations; same 0.3 interpreter for old and new rule lists; no real-time timing claims."
+}

@@ -1,0 +1,942 @@
+{
+  "variant": {
+    "id": "C1",
+    "label": "minimal baseline",
+    "reuse": false,
+    "cumulative": false,
+    "memory": false,
+    "note": "All three factors off; not a single-factor comparison.",
+    "factors": {
+      "reuse": false,
+      "cumulative": false,
+      "memory": false
+    },
+    "controlled_constants": [
+      "conditional_geometric_branching",
+      "live_replanning"
+    ]
+  },
+  "deployed_program_id": "P021",
+  "deployed_rules": [
+    "GOAL"
+  ],
+  "stages": [
+    {
+      "name": "L1_seed2000",
+      "success": true,
+      "program_id": "P001",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 45,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L1_seed2001",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 66,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L1_seed2003",
+      "success": true,
+      "program_id": "P003",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 45,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L1_seed2004",
+      "success": true,
+      "program_id": "P004",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 45,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L1_seed2005",
+      "success": true,
+      "program_id": "P005",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 45,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L1_seed2006",
+      "success": true,
+      "program_id": "P006",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 45,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L1_seed2008",
+      "success": true,
+      "program_id": "P007",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 45,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L1_seed2009",
+      "success": true,
+      "program_id": "P008",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 4096,
+      "search_work_units": 4082,
+      "replay_calls": 36,
+      "prefixes_tested": 70,
+      "total_prefix_visits": 75
+    },
+    {
+      "name": "L1_seed2010",
+      "success": true,
+      "program_id": "P009",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 52,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L2_seed3000",
+      "success": true,
+      "program_id": "P010",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 52,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L2_seed3001",
+      "success": true,
+      "program_id": "P011",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 52,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L2_seed3002",
+      "success": true,
+      "program_id": "P012",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 52,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L2_seed3003",
+      "success": true,
+      "program_id": "P013",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 52,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L2_seed3004",
+      "success": true,
+      "program_id": "P014",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 52,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L2_seed3005",
+      "success": true,
+      "program_id": "P015",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 52,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L2_seed3006",
+      "success": true,
+      "program_id": "P016",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 52,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L2_seed3007",
+      "success": true,
+      "program_id": "P017",
+      "rules": [
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 512,
+      "search_work_units": 478,
+      "replay_calls": 17,
+      "prefixes_tested": 19,
+      "total_prefix_visits": 21
+    },
+    {
+      "name": "L2_seed3008",
+      "success": true,
+      "program_id": "P018",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 52,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L2_seed3009",
+      "success": true,
+      "program_id": "P019",
+      "rules": [
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 512,
+      "search_work_units": 440,
+      "replay_calls": 27,
+      "prefixes_tested": 36,
+      "total_prefix_visits": 38
+    },
+    {
+      "name": "L2_seed3010",
+      "success": true,
+      "program_id": "P020",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 52,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L2_seed3011",
+      "success": true,
+      "program_id": "P021",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 52,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    }
+  ],
+  "totals": {
+    "wall_time_s": 0.34850440100126434,
+    "search_work_units": 5908,
+    "replay_calls": 98,
+    "prefixes_tested": 143,
+    "total_prefix_visits": 170,
+    "simulated_steps": 7,
+    "reused_steps": 0,
+    "stages_completed": 21,
+    "stages_succeeded": 21,
+    "final_program_rules": [
+      "GOAL"
+    ]
+  },
+  "library": [
+    {
+      "id": "P001",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P002",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P003",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P004",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P005",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P006",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P007",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P008",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P009",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P010",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P011",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P012",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P013",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P014",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P015",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P016",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P017",
+      "rules": [
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P018",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P019",
+      "rules": [
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P020",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P021",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    }
+  ]
+}

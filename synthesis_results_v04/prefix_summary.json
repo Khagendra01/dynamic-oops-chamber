@@ -1,0 +1,32 @@
+{
+  "incremental_reuse": {
+    "stages_solved": 8,
+    "stages_attempted": 8,
+    "total_search_work_units": 119251,
+    "total_real_replay_calls": 1133,
+    "total_prefixes_tested": 2989,
+    "final_program": [
+      "CONTINUE",
+      "CALL:P003"
+    ],
+    "heldout_successes": 97,
+    "heldout_collisions": 3,
+    "heldout_count": 100
+  },
+  "fresh_search": {
+    "stages_solved": 8,
+    "stages_attempted": 8,
+    "total_search_work_units": 909398,
+    "total_real_replay_calls": 6019,
+    "total_prefixes_tested": 14105,
+    "final_program": [
+      "CONTINUE",
+      "GOAL",
+      "WAIT_GAP",
+      "CHOOSE_AXIS"
+    ],
+    "heldout_successes": 97,
+    "heldout_collisions": 3,
+    "heldout_count": 100
+  }
+}

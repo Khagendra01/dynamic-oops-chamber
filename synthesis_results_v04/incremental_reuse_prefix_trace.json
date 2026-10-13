@@ -1,0 +1,702 @@
+{
+  "format": "chamber-prefix-search-0.4",
+  "disclaimer": "Bounded macro-prefix search with replay reset; not full original universal OOPS or bias optimal.",
+  "params": {
+    "reuse": true,
+    "max_depth": 4,
+    "starting_budget": 256,
+    "max_phase_budget": 1048576,
+    "max_prefixes_per_phase": 30000
+  },
+  "programs": [
+    {
+      "id": "P001",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P003",
+      "rules": [
+        "WAIT_GAP",
+        "CALL:P002"
+      ],
+      "bytecode": [
+        [
+          "CHECK_WAIT_GAP"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          2
+        ],
+        [
+          "EMIT_WAIT"
+        ],
+        [
+          "CALL",
+          "P002"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P004",
+      "rules": [
+        "CONTINUE",
+        "CALL:P003"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "CONTINUE"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "CALL",
+          "P003"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "name": "empty",
+      "success": true,
+      "program_id": "P001",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 512,
+      "search_work_units": 343,
+      "replay_calls": 10,
+      "prefixes_tested": 11,
+      "total_prefix_visits": 13,
+      "phases": [
+        {
+          "phase_budget": 256,
+          "lane": "fresh",
+          "lane_budget": 256,
+          "work_units": 256,
+          "prefix_visits": 11,
+          "prefixes_tested": 10,
+          "found": false
+        },
+        {
+          "phase_budget": 512,
+          "lane": "fresh",
+          "lane_budget": 512,
+          "work_units": 87,
+          "prefix_visits": 2,
+          "prefixes_tested": 1,
+          "found": true
+        }
+      ]
+    },
+    {
+      "name": "static",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "extend",
+      "phase_budget": 4096,
+      "search_work_units": 4056,
+      "replay_calls": 26,
+      "prefixes_tested": 71,
+      "total_prefix_visits": 75,
+      "phases": [
+        {
+          "phase_budget": 256,
+          "lane": "extend",
+          "lane_budget": 128,
+          "work_units": 128,
+          "prefix_visits": 1,
+          "prefixes_tested": 1,
+          "found": false
+        },
+        {
+          "phase_budget": 256,
+          "lane": "fresh",
+          "lane_budget": 128,
+          "work_units": 128,
+          "prefix_visits": 12,
+          "prefixes_tested": 11,
+          "found": false
+        },
+        {
+          "phase_budget": 512,
+          "lane": "extend",
+          "lane_budget": 256,
+          "work_units": 251,
+          "prefix_visits": 4,
+          "prefixes_tested": 4,
+          "found": false
+        },
+        {
+          "phase_budget": 512,
+          "lane": "fresh",
+          "lane_budget": 256,
+          "work_units": 256,
+          "prefix_visits": 12,
+          "prefixes_tested": 11,
+          "found": false
+        },
+        {
+          "phase_budget": 1024,
+          "lane": "extend",
+          "lane_budget": 512,
+          "work_units": 443,
+          "prefix_visits": 10,
+          "prefixes_tested": 10,
+          "found": false
+        },
+        {
+          "phase_budget": 1024,
+          "lane": "fresh",
+          "lane_budget": 512,
+          "work_units": 512,
+          "prefix_visits": 12,
+          "prefixes_tested": 11,
+          "found": false
+        },
+        {
+          "phase_budget": 2048,
+          "lane": "extend",
+          "lane_budget": 1024,
+          "work_units": 821,
+          "prefix_visits": 10,
+          "prefixes_tested": 10,
+          "found": false
+        },
+        {
+          "phase_budget": 2048,
+          "lane": "fresh",
+          "lane_budget": 1024,
+          "work_units": 1024,
+          "prefix_visits": 12,
+          "prefixes_tested": 11,
+          "found": false
+        },
+        {
+          "phase_budget": 4096,
+          "lane": "extend",
+          "lane_budget": 2048,
+          "work_units": 493,
+          "prefix_visits": 2,
+          "prefixes_tested": 2,
+          "found": true
+        }
+      ]
+    },
+    {
+      "name": "north_blocked",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 92,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1,
+      "phases": []
+    },
+    {
+      "name": "south_blocked",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 92,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1,
+      "phases": []
+    },
+    {
+      "name": "crossing",
+      "success": true,
+      "program_id": "P003",
+      "rules": [
+        "WAIT_GAP",
+        "CALL:P002"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 65536,
+      "search_work_units": 47617,
+      "replay_calls": 598,
+      "prefixes_tested": 1583,
+      "total_prefix_visits": 1592,
+      "phases": [
+        {
+          "phase_budget": 256,
+          "lane": "extend",
+          "lane_budget": 128,
+          "work_units": 99,
+          "prefix_visits": 8,
+          "prefixes_tested": 8,
+          "found": false
+        },
+        {
+          "phase_budget": 256,
+          "lane": "fresh",
+          "lane_budget": 128,
+          "work_units": 128,
+          "prefix_visits": 12,
+          "prefixes_tested": 11,
+          "found": false
+        },
+        {
+          "phase_budget": 512,
+          "lane": "extend",
+          "lane_budget": 256,
+          "work_units": 166,
+          "prefix_visits": 9,
+          "prefixes_tested": 9,
+          "found": false
+        },
+        {
+          "phase_budget": 512,
+          "lane": "fresh",
+          "lane_budget": 256,
+          "work_units": 256,
+          "prefix_visits": 12,
+          "prefixes_tested": 11,
+          "found": false
+        },
+        {
+          "phase_budget": 1024,
+          "lane": "extend",
+          "lane_budget": 512,
+          "work_units": 299,
+          "prefix_visits": 9,
+          "prefixes_tested": 9,
+          "found": false
+        },
+        {
+          "phase_budget": 1024,
+          "lane": "fresh",
+          "lane_budget": 512,
+          "work_units": 494,
+          "prefix_visits": 26,
+          "prefixes_tested": 25,
+          "found": false
+        },
+        {
+          "phase_budget": 2048,
+          "lane": "extend",
+          "lane_budget": 1024,
+          "work_units": 477,
+          "prefix_visits": 21,
+          "prefixes_tested": 21,
+          "found": false
+        },
+        {
+          "phase_budget": 2048,
+          "lane": "fresh",
+          "lane_budget": 1024,
+          "work_units": 951,
+          "prefix_visits": 41,
+          "prefixes_tested": 40,
+          "found": false
+        },
+        {
+          "phase_budget": 4096,
+          "lane": "extend",
+          "lane_budget": 2048,
+          "work_units": 757,
+          "prefix_visits": 38,
+          "prefixes_tested": 38,
+          "found": false
+        },
+        {
+          "phase_budget": 4096,
+          "lane": "fresh",
+          "lane_budget": 2048,
+          "work_units": 1838,
+          "prefix_visits": 59,
+          "prefixes_tested": 58,
+          "found": false
+        },
+        {
+          "phase_budget": 8192,
+          "lane": "extend",
+          "lane_budget": 4096,
+          "work_units": 1218,
+          "prefix_visits": 52,
+          "prefixes_tested": 52,
+          "found": false
+        },
+        {
+          "phase_budget": 8192,
+          "lane": "fresh",
+          "lane_budget": 4096,
+          "work_units": 3402,
+          "prefix_visits": 145,
+          "prefixes_tested": 144,
+          "found": false
+        },
+        {
+          "phase_budget": 16384,
+          "lane": "extend",
+          "lane_budget": 8192,
+          "work_units": 1945,
+          "prefix_visits": 59,
+          "prefixes_tested": 59,
+          "found": false
+        },
+        {
+          "phase_budget": 16384,
+          "lane": "fresh",
+          "lane_budget": 8192,
+          "work_units": 6318,
+          "prefix_visits": 232,
+          "prefixes_tested": 231,
+          "found": false
+        },
+        {
+          "phase_budget": 32768,
+          "lane": "extend",
+          "lane_budget": 16384,
+          "work_units": 2724,
+          "prefix_visits": 65,
+          "prefixes_tested": 65,
+          "found": false
+        },
+        {
+          "phase_budget": 32768,
+          "lane": "fresh",
+          "lane_budget": 16384,
+          "work_units": 11884,
+          "prefix_visits": 327,
+          "prefixes_tested": 326,
+          "found": false
+        },
+        {
+          "phase_budget": 65536,
+          "lane": "extend",
+          "lane_budget": 32768,
+          "work_units": 3473,
+          "prefix_visits": 65,
+          "prefixes_tested": 65,
+          "found": false
+        },
+        {
+          "phase_budget": 65536,
+          "lane": "fresh",
+          "lane_budget": 32768,
+          "work_units": 11188,
+          "prefix_visits": 412,
+          "prefixes_tested": 411,
+          "found": true
+        }
+      ]
+    },
+    {
+      "name": "moving_gate",
+      "success": true,
+      "program_id": "P003",
+      "rules": [
+        "WAIT_GAP",
+        "CALL:P002"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 92,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1,
+      "phases": []
+    },
+    {
+      "name": "moving",
+      "success": true,
+      "program_id": "P003",
+      "rules": [
+        "WAIT_GAP",
+        "CALL:P002"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 185,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1,
+      "phases": []
+    },
+    {
+      "name": "efficient_empty",
+      "success": true,
+      "program_id": "P004",
+      "rules": [
+        "CONTINUE",
+        "CALL:P003"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 65536,
+      "search_work_units": 66774,
+      "replay_calls": 495,
+      "prefixes_tested": 1320,
+      "total_prefix_visits": 1329,
+      "phases": [
+        {
+          "phase_budget": 256,
+          "lane": "extend",
+          "lane_budget": 128,
+          "work_units": 128,
+          "prefix_visits": 1,
+          "prefixes_tested": 1,
+          "found": false
+        },
+        {
+          "phase_budget": 256,
+          "lane": "fresh",
+          "lane_budget": 128,
+          "work_units": 128,
+          "prefix_visits": 12,
+          "prefixes_tested": 11,
+          "found": false
+        },
+        {
+          "phase_budget": 512,
+          "lane": "extend",
+          "lane_budget": 256,
+          "work_units": 240,
+          "prefix_visits": 10,
+          "prefixes_tested": 10,
+          "found": false
+        },
+        {
+          "phase_budget": 512,
+          "lane": "fresh",
+          "lane_budget": 256,
+          "work_units": 256,
+          "prefix_visits": 12,
+          "prefixes_tested": 11,
+          "found": false
+        },
+        {
+          "phase_budget": 1024,
+          "lane": "extend",
+          "lane_budget": 512,
+          "work_units": 457,
+          "prefix_visits": 10,
+          "prefixes_tested": 10,
+          "found": false
+        },
+        {
+          "phase_budget": 1024,
+          "lane": "fresh",
+          "lane_budget": 512,
+          "work_units": 505,
+          "prefix_visits": 16,
+          "prefixes_tested": 15,
+          "found": false
+        },
+        {
+          "phase_budget": 2048,
+          "lane": "extend",
+          "lane_budget": 1024,
+          "work_units": 841,
+          "prefix_visits": 23,
+          "prefixes_tested": 23,
+          "found": false
+        },
+        {
+          "phase_budget": 2048,
+          "lane": "fresh",
+          "lane_budget": 1024,
+          "work_units": 984,
+          "prefix_visits": 29,
+          "prefixes_tested": 28,
+          "found": false
+        },
+        {
+          "phase_budget": 4096,
+          "lane": "extend",
+          "lane_budget": 2048,
+          "work_units": 1487,
+          "prefix_visits": 34,
+          "prefixes_tested": 34,
+          "found": false
+        },
+        {
+          "phase_budget": 4096,
+          "lane": "fresh",
+          "lane_budget": 2048,
+          "work_units": 1903,
+          "prefix_visits": 49,
+          "prefixes_tested": 48,
+          "found": false
+        },
+        {
+          "phase_budget": 8192,
+          "lane": "extend",
+          "lane_budget": 4096,
+          "work_units": 2632,
+          "prefix_visits": 55,
+          "prefixes_tested": 55,
+          "found": false
+        },
+        {
+          "phase_budget": 8192,
+          "lane": "fresh",
+          "lane_budget": 4096,
+          "work_units": 3613,
+          "prefix_visits": 99,
+          "prefixes_tested": 98,
+          "found": false
+        },
+        {
+          "phase_budget": 16384,
+          "lane": "extend",
+          "lane_budget": 8192,
+          "work_units": 4168,
+          "prefix_visits": 69,
+          "prefixes_tested": 69,
+          "found": false
+        },
+        {
+          "phase_budget": 16384,
+          "lane": "fresh",
+          "lane_budget": 8192,
+          "work_units": 6768,
+          "prefix_visits": 164,
+          "prefixes_tested": 163,
+          "found": false
+        },
+        {
+          "phase_budget": 32768,
+          "lane": "extend",
+          "lane_budget": 16384,
+          "work_units": 6315,
+          "prefix_visits": 77,
+          "prefixes_tested": 77,
+          "found": false
+        },
+        {
+          "phase_budget": 32768,
+          "lane": "fresh",
+          "lane_budget": 16384,
+          "work_units": 12715,
+          "prefix_visits": 255,
+          "prefixes_tested": 254,
+          "found": false
+        },
+        {
+          "phase_budget": 65536,
+          "lane": "extend",
+          "lane_budget": 32768,
+          "work_units": 8135,
+          "prefix_visits": 82,
+          "prefixes_tested": 82,
+          "found": false
+        },
+        {
+          "phase_budget": 65536,
+          "lane": "fresh",
+          "lane_budget": 32768,
+          "work_units": 15499,
+          "prefix_visits": 332,
+          "prefixes_tested": 331,
+          "found": true
+        }
+      ]
+    }
+  ]
+}

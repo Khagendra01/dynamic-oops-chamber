@@ -1,0 +1,29 @@
+{
+  "siblings": 40,
+  "repeats": 3,
+  "scene": "static",
+  "disclaimer": "Artificial shared-prefix branching stress test, not curriculum timing",
+  "results": {
+    "replay": {
+      "median_seconds": 0.11271387499982666,
+      "min_seconds": 0.11073354899963306,
+      "instructions": 4200,
+      "physics_steps": 720,
+      "journal_preimages": 0
+    },
+    "snapshot": {
+      "median_seconds": 0.09596139000041148,
+      "min_seconds": 0.08558802099923923,
+      "instructions": 3498,
+      "physics_steps": 603,
+      "journal_preimages": 0
+    },
+    "undo": {
+      "median_seconds": 0.11196364499937772,
+      "min_seconds": 0.09068201500031137,
+      "instructions": 3498,
+      "physics_steps": 603,
+      "journal_preimages": 4705
+    }
+  }
+}

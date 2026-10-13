@@ -1,0 +1,1117 @@
+{
+  "variant": {
+    "id": "F010",
+    "label": "cumulative only",
+    "reuse": false,
+    "cumulative": true,
+    "memory": false,
+    "note": "Factorial cell: cumulative validation alone.",
+    "factors": {
+      "reuse": false,
+      "cumulative": true,
+      "memory": false
+    },
+    "controlled_constants": [
+      "conditional_geometric_branching",
+      "live_replanning"
+    ]
+  },
+  "deployed_program_id": "P018",
+  "deployed_rules": [
+    "CONTINUE",
+    "Y_NEG",
+    "GOAL"
+  ],
+  "stages": [
+    {
+      "name": "L1_seed6000",
+      "success": true,
+      "program_id": "P001",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 66,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L1_seed6001",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 512,
+      "search_work_units": 365,
+      "replay_calls": 11,
+      "prefixes_tested": 11,
+      "total_prefix_visits": 13
+    },
+    {
+      "name": "L1_seed6002",
+      "success": true,
+      "program_id": "P003",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 1024,
+      "search_work_units": 927,
+      "replay_calls": 12,
+      "prefixes_tested": 21,
+      "total_prefix_visits": 24
+    },
+    {
+      "name": "L1_seed6003",
+      "success": true,
+      "program_id": "P004",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 8192,
+      "search_work_units": 7886,
+      "replay_calls": 88,
+      "prefixes_tested": 140,
+      "total_prefix_visits": 146
+    },
+    {
+      "name": "L1_seed6004",
+      "success": true,
+      "program_id": "P005",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 8192,
+      "search_work_units": 7995,
+      "replay_calls": 102,
+      "prefixes_tested": 142,
+      "total_prefix_visits": 148
+    },
+    {
+      "name": "L1_seed6005",
+      "success": true,
+      "program_id": "P006",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 8192,
+      "search_work_units": 8106,
+      "replay_calls": 112,
+      "prefixes_tested": 140,
+      "total_prefix_visits": 146
+    },
+    {
+      "name": "L1_seed6006",
+      "success": true,
+      "program_id": "P007",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 8192,
+      "search_work_units": 8267,
+      "replay_calls": 126,
+      "prefixes_tested": 141,
+      "total_prefix_visits": 147
+    },
+    {
+      "name": "L1_seed6008",
+      "success": true,
+      "program_id": "P008",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 16384,
+      "search_work_units": 15176,
+      "replay_calls": 122,
+      "prefixes_tested": 231,
+      "total_prefix_visits": 238
+    },
+    {
+      "name": "L1_seed6009",
+      "success": true,
+      "program_id": "P009",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 16384,
+      "search_work_units": 15298,
+      "replay_calls": 134,
+      "prefixes_tested": 229,
+      "total_prefix_visits": 236
+    },
+    {
+      "name": "L1_seed6010",
+      "success": true,
+      "program_id": "P010",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 16384,
+      "search_work_units": 15455,
+      "replay_calls": 146,
+      "prefixes_tested": 229,
+      "total_prefix_visits": 236
+    },
+    {
+      "name": "L1_seed6011",
+      "success": true,
+      "program_id": "P011",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 16384,
+      "search_work_units": 15596,
+      "replay_calls": 160,
+      "prefixes_tested": 229,
+      "total_prefix_visits": 236
+    },
+    {
+      "name": "L2_seed7000",
+      "success": true,
+      "program_id": "P012",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 16384,
+      "search_work_units": 15310,
+      "replay_calls": 249,
+      "prefixes_tested": 409,
+      "total_prefix_visits": 416
+    },
+    {
+      "name": "L2_seed7001",
+      "success": true,
+      "program_id": "P013",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 16384,
+      "search_work_units": 15942,
+      "replay_calls": 204,
+      "prefixes_tested": 214,
+      "total_prefix_visits": 221
+    },
+    {
+      "name": "L2_seed7002",
+      "success": true,
+      "program_id": "P014",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 16384,
+      "search_work_units": 16098,
+      "replay_calls": 236,
+      "prefixes_tested": 218,
+      "total_prefix_visits": 225
+    },
+    {
+      "name": "L2_seed7003",
+      "success": true,
+      "program_id": "P015",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 16384,
+      "search_work_units": 16268,
+      "replay_calls": 258,
+      "prefixes_tested": 212,
+      "total_prefix_visits": 219
+    },
+    {
+      "name": "L2_seed7004",
+      "success": true,
+      "program_id": "P016",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 32768,
+      "search_work_units": 30495,
+      "replay_calls": 355,
+      "prefixes_tested": 306,
+      "total_prefix_visits": 314
+    },
+    {
+      "name": "L2_seed7005",
+      "success": true,
+      "program_id": "P017",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 32768,
+      "search_work_units": 30643,
+      "replay_calls": 385,
+      "prefixes_tested": 314,
+      "total_prefix_visits": 322
+    },
+    {
+      "name": "L2_seed7006",
+      "success": true,
+      "program_id": "P018",
+      "rules": [
+        "CONTINUE",
+        "Y_NEG",
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 1048576,
+      "search_work_units": 491016,
+      "replay_calls": 3435,
+      "prefixes_tested": 10968,
+      "total_prefix_visits": 10981
+    },
+    {
+      "name": "L2_seed7007",
+      "success": false,
+      "program_id": null,
+      "rules": [],
+      "selected_lane": "none",
+      "phase_budget": 0,
+      "search_work_units": 701832,
+      "replay_calls": 6093,
+      "prefixes_tested": 12594,
+      "total_prefix_visits": 12607
+    }
+  ],
+  "totals": {
+    "wall_time_s": 58.08152833799977,
+    "search_work_units": 1412741,
+    "replay_calls": 12229,
+    "prefixes_tested": 26749,
+    "total_prefix_visits": 26877,
+    "simulated_steps": 93053,
+    "reused_steps": 0,
+    "stages_completed": 19,
+    "stages_succeeded": 18,
+    "final_program_rules": [
+      "CONTINUE",
+      "Y_NEG",
+      "GOAL"
+    ]
+  },
+  "library": [
+    {
+      "id": "P001",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P002",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P003",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P004",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P005",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P006",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P007",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P008",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P009",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P010",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P011",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P012",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P013",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P014",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P015",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P016",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P017",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P018",
+      "rules": [
+        "CONTINUE",
+        "Y_NEG",
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "CONTINUE"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "Y_NEG"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    }
+  ]
+}

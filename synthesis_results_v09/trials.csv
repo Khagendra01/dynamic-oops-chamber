@@ -1,0 +1,4 @@
+backend,promote_after,stages,search_work_units,candidates_evaluated,instructions,steps,nodes_built,checkpoint_hits,node_evictions,peak_nodes,extra_parent_steps,restore_calls,train_seconds,heldout_success,heldout_collisions,heldout_total,trial
+replay,2,8,119251,1133,117961,18775,0,0,0,0,0,0,3.788424979999945,97,3,100,0
+snapshot,2,8,119251,1133,119464,19043,23,143,0,73,476,143,3.7250252710000495,97,3,100,0
+undo,2,8,119251,1133,119464,19043,23,143,0,73,476,143,4.196008646999871,97,3,100,0

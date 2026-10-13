@@ -1,0 +1,1024 @@
+{
+  "variant": {
+    "id": "F010",
+    "label": "cumulative only",
+    "reuse": false,
+    "cumulative": true,
+    "memory": false,
+    "note": "Factorial cell: cumulative validation alone.",
+    "factors": {
+      "reuse": false,
+      "cumulative": true,
+      "memory": false
+    },
+    "controlled_constants": [
+      "conditional_geometric_branching",
+      "live_replanning"
+    ]
+  },
+  "deployed_program_id": "P022",
+  "deployed_rules": [
+    "GOAL",
+    "CHOOSE_AXIS"
+  ],
+  "stages": [
+    {
+      "name": "L1_seed10000",
+      "success": true,
+      "program_id": "P001",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 52,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L1_seed10001",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 512,
+      "search_work_units": 365,
+      "replay_calls": 12,
+      "prefixes_tested": 11,
+      "total_prefix_visits": 13
+    },
+    {
+      "name": "L1_seed10002",
+      "success": true,
+      "program_id": "P003",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 1024,
+      "search_work_units": 920,
+      "replay_calls": 14,
+      "prefixes_tested": 21,
+      "total_prefix_visits": 24
+    },
+    {
+      "name": "L1_seed10003",
+      "success": true,
+      "program_id": "P004",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 1024,
+      "search_work_units": 970,
+      "replay_calls": 13,
+      "prefixes_tested": 21,
+      "total_prefix_visits": 24
+    },
+    {
+      "name": "L1_seed10005",
+      "success": true,
+      "program_id": "P005",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 1024,
+      "search_work_units": 1020,
+      "replay_calls": 15,
+      "prefixes_tested": 21,
+      "total_prefix_visits": 24
+    },
+    {
+      "name": "L1_seed10006",
+      "success": true,
+      "program_id": "P006",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 2048,
+      "search_work_units": 2084,
+      "replay_calls": 22,
+      "prefixes_tested": 33,
+      "total_prefix_visits": 37
+    },
+    {
+      "name": "L1_seed10008",
+      "success": true,
+      "program_id": "P007",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 2048,
+      "search_work_units": 2155,
+      "replay_calls": 24,
+      "prefixes_tested": 33,
+      "total_prefix_visits": 37
+    },
+    {
+      "name": "L1_seed10009",
+      "success": true,
+      "program_id": "P008",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 2048,
+      "search_work_units": 2198,
+      "replay_calls": 28,
+      "prefixes_tested": 33,
+      "total_prefix_visits": 37
+    },
+    {
+      "name": "L1_seed10010",
+      "success": true,
+      "program_id": "P009",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 2048,
+      "search_work_units": 2234,
+      "replay_calls": 28,
+      "prefixes_tested": 33,
+      "total_prefix_visits": 37
+    },
+    {
+      "name": "L1_seed10011",
+      "success": true,
+      "program_id": "P010",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 2048,
+      "search_work_units": 2277,
+      "replay_calls": 30,
+      "prefixes_tested": 33,
+      "total_prefix_visits": 37
+    },
+    {
+      "name": "L2_seed11000",
+      "success": true,
+      "program_id": "P011",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 4096,
+      "search_work_units": 4341,
+      "replay_calls": 63,
+      "prefixes_tested": 60,
+      "total_prefix_visits": 65
+    },
+    {
+      "name": "L2_seed11001",
+      "success": true,
+      "program_id": "P012",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 4096,
+      "search_work_units": 4391,
+      "replay_calls": 72,
+      "prefixes_tested": 60,
+      "total_prefix_visits": 65
+    },
+    {
+      "name": "L2_seed11002",
+      "success": true,
+      "program_id": "P013",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 4096,
+      "search_work_units": 4444,
+      "replay_calls": 81,
+      "prefixes_tested": 60,
+      "total_prefix_visits": 65
+    },
+    {
+      "name": "L2_seed11003",
+      "success": true,
+      "program_id": "P014",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 4096,
+      "search_work_units": 4491,
+      "replay_calls": 90,
+      "prefixes_tested": 60,
+      "total_prefix_visits": 65
+    },
+    {
+      "name": "L2_seed11004",
+      "success": true,
+      "program_id": "P015",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 4096,
+      "search_work_units": 4541,
+      "replay_calls": 99,
+      "prefixes_tested": 60,
+      "total_prefix_visits": 65
+    },
+    {
+      "name": "L2_seed11005",
+      "success": true,
+      "program_id": "P016",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 4096,
+      "search_work_units": 4591,
+      "replay_calls": 108,
+      "prefixes_tested": 60,
+      "total_prefix_visits": 65
+    },
+    {
+      "name": "L2_seed11006",
+      "success": true,
+      "program_id": "P017",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 4096,
+      "search_work_units": 4638,
+      "replay_calls": 122,
+      "prefixes_tested": 65,
+      "total_prefix_visits": 70
+    },
+    {
+      "name": "L2_seed11007",
+      "success": true,
+      "program_id": "P018",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 4096,
+      "search_work_units": 4691,
+      "replay_calls": 126,
+      "prefixes_tested": 60,
+      "total_prefix_visits": 65
+    },
+    {
+      "name": "L2_seed11008",
+      "success": true,
+      "program_id": "P019",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 4096,
+      "search_work_units": 4615,
+      "replay_calls": 152,
+      "prefixes_tested": 130,
+      "total_prefix_visits": 135
+    },
+    {
+      "name": "L2_seed11009",
+      "success": true,
+      "program_id": "P020",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 32768,
+      "search_work_units": 27380,
+      "replay_calls": 1361,
+      "prefixes_tested": 635,
+      "total_prefix_visits": 643
+    },
+    {
+      "name": "L2_seed11010",
+      "success": true,
+      "program_id": "P021",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 32768,
+      "search_work_units": 27504,
+      "replay_calls": 834,
+      "prefixes_tested": 654,
+      "total_prefix_visits": 662
+    },
+    {
+      "name": "L2_seed11011",
+      "success": true,
+      "program_id": "P022",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 32768,
+      "search_work_units": 28785,
+      "replay_calls": 644,
+      "prefixes_tested": 445,
+      "total_prefix_visits": 453
+    }
+  ],
+  "totals": {
+    "wall_time_s": 8.592925794000621,
+    "search_work_units": 138687,
+    "replay_calls": 3939,
+    "prefixes_tested": 2589,
+    "total_prefix_visits": 2690,
+    "simulated_steps": 7765,
+    "reused_steps": 0,
+    "stages_completed": 22,
+    "stages_succeeded": 22,
+    "final_program_rules": [
+      "GOAL",
+      "CHOOSE_AXIS"
+    ]
+  },
+  "library": [
+    {
+      "id": "P001",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P002",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P003",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P004",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P005",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P006",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P007",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P008",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P009",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P010",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P011",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P012",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P013",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P014",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P015",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P016",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P017",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P018",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P019",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P020",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P021",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P022",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    }
+  ]
+}

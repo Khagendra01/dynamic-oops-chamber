@@ -1,0 +1,381 @@
+{
+  "variant": {
+    "id": "C4",
+    "label": "stateless runtime",
+    "reuse": true,
+    "cumulative": true,
+    "memory": false,
+    "note": "Isolates persistent runtime memory (C5 vs C4).",
+    "factors": {
+      "reuse": true,
+      "cumulative": true,
+      "memory": false
+    },
+    "controlled_constants": [
+      "conditional_geometric_branching",
+      "live_replanning"
+    ]
+  },
+  "deployed_program_id": "P002",
+  "deployed_rules": [
+    "GOAL",
+    "CHOOSE_AXIS"
+  ],
+  "stages": [
+    {
+      "name": "L1_seed6000",
+      "success": true,
+      "program_id": "P001",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "fresh",
+      "phase_budget": 256,
+      "search_work_units": 66,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 2
+    },
+    {
+      "name": "L1_seed6001",
+      "success": true,
+      "program_id": "P001",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 43,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L1_seed6002",
+      "success": true,
+      "program_id": "P001",
+      "rules": [
+        "GOAL"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 50,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L1_seed6003",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "extend",
+      "phase_budget": 4096,
+      "search_work_units": 4070,
+      "replay_calls": 38,
+      "prefixes_tested": 68,
+      "total_prefix_visits": 72
+    },
+    {
+      "name": "L1_seed6004",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 44,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L1_seed6005",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 44,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L1_seed6006",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 65,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L1_seed6008",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 60,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L1_seed6009",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 44,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L1_seed6010",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 58,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L1_seed6011",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 51,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L2_seed7000",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 51,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L2_seed7001",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 51,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L2_seed7002",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 51,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L2_seed7003",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 51,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L2_seed7004",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 51,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L2_seed7005",
+      "success": true,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "selected_lane": "reused",
+      "phase_budget": 0,
+      "search_work_units": 51,
+      "replay_calls": 1,
+      "prefixes_tested": 1,
+      "total_prefix_visits": 1
+    },
+    {
+      "name": "L2_seed7006",
+      "success": false,
+      "program_id": null,
+      "rules": [],
+      "selected_lane": "none",
+      "phase_budget": 0,
+      "search_work_units": 464573,
+      "replay_calls": 4223,
+      "prefixes_tested": 12690,
+      "total_prefix_visits": 12703
+    }
+  ],
+  "totals": {
+    "wall_time_s": 16.68990068799758,
+    "search_work_units": 469474,
+    "replay_calls": 4277,
+    "prefixes_tested": 12774,
+    "total_prefix_visits": 12792,
+    "simulated_steps": 59839,
+    "reused_steps": 0,
+    "stages_completed": 18,
+    "stages_succeeded": 17,
+    "final_program_rules": [
+      "GOAL",
+      "CHOOSE_AXIS"
+    ]
+  },
+  "library": [
+    {
+      "id": "P001",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    }
+  ]
+}

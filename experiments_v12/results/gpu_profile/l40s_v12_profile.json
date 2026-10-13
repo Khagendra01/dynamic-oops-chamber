@@ -1,0 +1,103 @@
+{
+  "environment": {
+    "python": "3.12.10",
+    "platform": "Linux-4.19.0-gvisor-x86_64-with-glibc2.36",
+    "torch": "2.7.1+cu126",
+    "device": "NVIDIA L40S",
+    "capability": [
+      8,
+      9
+    ],
+    "cpu_count": 32
+  },
+  "parameters": {
+    "batch_size": 8192,
+    "dynamic_count": 200
+  },
+  "tests": {
+    "cmd": "/usr/local/bin/python -m unittest discover -p test_*.py -q",
+    "returncode": 0,
+    "elapsed_s": 39.329,
+    "stdout": "",
+    "stderr": "----------------------------------------------------------------------\nRan 122 tests in 36.921s\n\nOK\n"
+  },
+  "batched": {
+    "device": "cuda",
+    "batch_size": 8192,
+    "merge_waves": true,
+    "max_phase_budget": 1048576,
+    "reference": {
+      "wall_time_s": 1.2082840599999969,
+      "program_ids": [
+        "P001",
+        "P002",
+        "P003",
+        "P004"
+      ],
+      "rules": [
+        [
+          "GOAL"
+        ],
+        [
+          "GOAL",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "WAIT_GAP",
+          "CALL:P002"
+        ],
+        [
+          "CONTINUE",
+          "CALL:P003"
+        ]
+      ],
+      "real_replay_calls": 495,
+      "simulated_steps": 9652
+    },
+    "batched": {
+      "wall_time_s": 6.996171945,
+      "program_ids": [
+        "P001",
+        "P002",
+        "P003",
+        "P004"
+      ],
+      "rules": [
+        [
+          "GOAL"
+        ],
+        [
+          "GOAL",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "WAIT_GAP",
+          "CALL:P002"
+        ],
+        [
+          "CONTINUE",
+          "CALL:P003"
+        ]
+      ],
+      "real_replay_calls": 495,
+      "simulated_steps": 9652
+    },
+    "speedup": 0.17270645568731757,
+    "parity": true,
+    "torch_version": "2.7.1+cu126",
+    "cuda_available": true
+  },
+  "dynamic_scenarios_host_cpu": {
+    "episodes": 200,
+    "wall_time_s": 0.6386807270000006,
+    "episodes_per_second": 313.1455068942449,
+    "mean_steps": 11.375,
+    "success_rate": 0.885,
+    "program_id": "P002",
+    "rules": [
+      "GOAL",
+      "CHOOSE_AXIS"
+    ],
+    "note": "measured on the GPU instance host CPU (not the local Pi); the batched cuboid engine does not cover v1.2 event scenes"
+  }
+}

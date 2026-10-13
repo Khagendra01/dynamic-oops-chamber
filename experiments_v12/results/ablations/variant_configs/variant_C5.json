@@ -1,0 +1,17 @@
+{
+  "id": "C5",
+  "label": "full system",
+  "reuse": true,
+  "cumulative": true,
+  "memory": true,
+  "note": "Reference configuration for Paper 1.",
+  "factors": {
+    "reuse": true,
+    "cumulative": true,
+    "memory": true
+  },
+  "controlled_constants": [
+    "conditional_geometric_branching",
+    "live_replanning"
+  ]
+}

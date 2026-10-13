@@ -1,0 +1,17 @@
+{
+  "id": "F100",
+  "label": "reuse only",
+  "reuse": true,
+  "cumulative": false,
+  "memory": false,
+  "note": "Factorial cell: reuse alone.",
+  "factors": {
+    "reuse": true,
+    "cumulative": false,
+    "memory": false
+  },
+  "controlled_constants": [
+    "conditional_geometric_branching",
+    "live_replanning"
+  ]
+}

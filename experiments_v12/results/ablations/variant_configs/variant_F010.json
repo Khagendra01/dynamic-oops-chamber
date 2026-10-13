@@ -1,0 +1,17 @@
+{
+  "id": "F010",
+  "label": "cumulative only",
+  "reuse": false,
+  "cumulative": true,
+  "memory": false,
+  "note": "Factorial cell: cumulative validation alone.",
+  "factors": {
+    "reuse": false,
+    "cumulative": true,
+    "memory": false
+  },
+  "controlled_constants": [
+    "conditional_geometric_branching",
+    "live_replanning"
+  ]
+}

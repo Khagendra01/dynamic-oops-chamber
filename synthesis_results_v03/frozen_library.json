@@ -1,0 +1,203 @@
+{
+  "format": "chamber-dsl-0.3",
+  "limits": {
+    "max_rules": 3,
+    "budget_per_stage": 1500
+  },
+  "frozen": [
+    {
+      "id": "P001",
+      "rules": [
+        "GOAL"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "GOAL"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P002",
+      "rules": [
+        "CALL:P001",
+        "CHOOSE_AXIS"
+      ],
+      "bytecode": [
+        [
+          "CALL",
+          "P001"
+        ],
+        [
+          "AIM",
+          "CHOOSE_AXIS"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P003",
+      "rules": [
+        "WAIT_GAP",
+        "CALL:P002"
+      ],
+      "bytecode": [
+        [
+          "CHECK_WAIT_GAP"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          2
+        ],
+        [
+          "EMIT_WAIT"
+        ],
+        [
+          "CALL",
+          "P002"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    },
+    {
+      "id": "P004",
+      "rules": [
+        "CONTINUE",
+        "CALL:P003"
+      ],
+      "bytecode": [
+        [
+          "AIM",
+          "CONTINUE"
+        ],
+        [
+          "CHECK_SAFE"
+        ],
+        [
+          "IF_UNSAFE_SKIP",
+          3
+        ],
+        [
+          "STORE_DIRECTION"
+        ],
+        [
+          "EMIT"
+        ],
+        [
+          "CALL",
+          "P003"
+        ],
+        [
+          "END_NO_MATCH"
+        ]
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "stage": "empty",
+      "program_id": "P001",
+      "tested": 1,
+      "extension_tested": 0,
+      "fresh_tested": 1,
+      "replayed_episodes": 1,
+      "found_lane": "fresh"
+    },
+    {
+      "stage": "static",
+      "program_id": "P002",
+      "tested": 11,
+      "extension_tested": 6,
+      "fresh_tested": 5,
+      "replayed_episodes": 12,
+      "found_lane": "extend"
+    },
+    {
+      "stage": "north_blocked",
+      "program_id": "P002",
+      "tested": 0,
+      "extension_tested": 0,
+      "fresh_tested": 0,
+      "replayed_episodes": 1,
+      "found_lane": "reused"
+    },
+    {
+      "stage": "south_blocked",
+      "program_id": "P002",
+      "tested": 0,
+      "extension_tested": 0,
+      "fresh_tested": 0,
+      "replayed_episodes": 1,
+      "found_lane": "reused"
+    },
+    {
+      "stage": "crossing",
+      "program_id": "P003",
+      "tested": 21,
+      "extension_tested": 11,
+      "fresh_tested": 10,
+      "replayed_episodes": 25,
+      "found_lane": "extend"
+    },
+    {
+      "stage": "moving_gate",
+      "program_id": "P003",
+      "tested": 0,
+      "extension_tested": 0,
+      "fresh_tested": 0,
+      "replayed_episodes": 1,
+      "found_lane": "reused"
+    },
+    {
+      "stage": "moving",
+      "program_id": "P003",
+      "tested": 0,
+      "extension_tested": 0,
+      "fresh_tested": 0,
+      "replayed_episodes": 1,
+      "found_lane": "reused"
+    },
+    {
+      "stage": "efficient_empty",
+      "program_id": "P004",
+      "tested": 9,
+      "extension_tested": 5,
+      "fresh_tested": 4,
+      "replayed_episodes": 16,
+      "found_lane": "extend"
+    }
+  ]
+}

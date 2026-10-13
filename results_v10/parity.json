@@ -1,0 +1,8 @@
+{
+  "device": "cpu",
+  "dtype": "torch.float64",
+  "scenes": 100,
+  "success": 97,
+  "mismatches": [],
+  "equivalent": true
+}

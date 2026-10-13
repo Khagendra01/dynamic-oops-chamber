@@ -1,0 +1,20 @@
+{
+  "rows": [
+    {
+      "scene": "static",
+      "children": 8,
+      "full_replay_instructions": 61,
+      "instruction_continuation_instructions": 40,
+      "shared_parent_instructions": 3
+    },
+    {
+      "scene": "moving",
+      "children": 8,
+      "full_replay_instructions": 61,
+      "instruction_continuation_instructions": 40,
+      "shared_parent_instructions": 3
+    }
+  ],
+  "total_full_instructions": 122,
+  "total_continuation_instructions": 80
+}

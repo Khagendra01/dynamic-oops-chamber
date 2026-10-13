@@ -1,0 +1,17 @@
+{
+  "id": "C3",
+  "label": "no cumulative validation",
+  "reuse": true,
+  "cumulative": false,
+  "memory": true,
+  "note": "Isolates cumulative curriculum validation (C5 vs C3).",
+  "factors": {
+    "reuse": true,
+    "cumulative": false,
+    "memory": true
+  },
+  "controlled_constants": [
+    "conditional_geometric_branching",
+    "live_replanning"
+  ]
+}

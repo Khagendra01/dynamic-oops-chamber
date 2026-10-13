@@ -1,0 +1,17 @@
+{
+  "id": "F001",
+  "label": "memory only",
+  "reuse": false,
+  "cumulative": false,
+  "memory": true,
+  "note": "Factorial cell: memory without reuse or cumulative validation.",
+  "factors": {
+    "reuse": false,
+    "cumulative": false,
+    "memory": true
+  },
+  "controlled_constants": [
+    "conditional_geometric_branching",
+    "live_replanning"
+  ]
+}

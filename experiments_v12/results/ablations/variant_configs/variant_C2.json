@@ -1,0 +1,17 @@
+{
+  "id": "C2",
+  "label": "no frozen reuse",
+  "reuse": false,
+  "cumulative": true,
+  "memory": true,
+  "note": "Isolates frozen-code reuse (C5 vs C2).",
+  "factors": {
+    "reuse": false,
+    "cumulative": true,
+    "memory": true
+  },
+  "controlled_constants": [
+    "conditional_geometric_branching",
+    "live_replanning"
+  ]
+}

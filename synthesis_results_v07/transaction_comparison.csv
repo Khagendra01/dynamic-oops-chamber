@@ -1,0 +1,13 @@
+scene,mode,repeat_count,median_seconds,instructions,physics_steps,journal_entries,successes
+empty,replay,5,0.0050491,420,84,0,7
+empty,snapshot,5,0.0006733,60,12,0,7
+empty,undo,5,0.0007568,60,12,84,7
+static,replay,5,0.0222896,1024,167,0,5
+static,snapshot,5,0.0222212,916,149,0,5
+static,undo,5,0.0262809,916,149,1215,5
+moving,replay,5,0.0328285,963,159,0,5
+moving,snapshot,5,0.0282235,855,141,0,5
+moving,undo,5,0.0379318,855,141,1138,5
+crossing,replay,5,0.0091994,389,69,0,7
+crossing,snapshot,5,0.0079235,311,57,0,7
+crossing,undo,5,0.0090781,311,57,426,7

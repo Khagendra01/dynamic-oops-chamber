@@ -1,0 +1,426 @@
+{
+  "outcome": {
+    "success": true,
+    "collision": false,
+    "interventions": 0,
+    "steps": 15,
+    "fallback_waits": 0,
+    "explicit_waits": 0,
+    "continued_actions": 12,
+    "directional_choices": 1,
+    "trace_events": 80,
+    "work_units": 105
+  },
+  "trace": [
+    {
+      "step": 0,
+      "position": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "velocity": [
+        0.13856406460551016,
+        0.13856406460551016,
+        0.13856406460551016
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "BLOCKED",
+        "CALL P003",
+        "GAP_WAIT_NOT_NEEDED",
+        "CALL P002",
+        "CALL P001",
+        "AIM GOAL",
+        "SAFE",
+        "SELECTED:GOAL",
+        "EMIT"
+      ],
+      "new_position": [
+        0.16928203230275507,
+        0.16928203230275507,
+        0.16928203230275507
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 1,
+      "position": [
+        0.16928203230275507,
+        0.16928203230275507,
+        0.16928203230275507
+      ],
+      "velocity": [
+        0.13856406460551018,
+        0.13856406460551018,
+        0.13856406460551018
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "SAFE",
+        "SELECTED:CONTINUE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.23856406460551016,
+        0.23856406460551016,
+        0.23856406460551016
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 2,
+      "position": [
+        0.23856406460551016,
+        0.23856406460551016,
+        0.23856406460551016
+      ],
+      "velocity": [
+        0.13856406460551016,
+        0.13856406460551016,
+        0.13856406460551016
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "SAFE",
+        "SELECTED:CONTINUE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.30784609690826525,
+        0.30784609690826525,
+        0.30784609690826525
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 3,
+      "position": [
+        0.30784609690826525,
+        0.30784609690826525,
+        0.30784609690826525
+      ],
+      "velocity": [
+        0.24,
+        0.0,
+        0.0
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "BLOCKED",
+        "CALL P003",
+        "GAP_WAIT_NOT_NEEDED",
+        "CALL P002",
+        "CALL P001",
+        "AIM GOAL",
+        "BLOCKED",
+        "AIM CHOOSE_AXIS",
+        "SAFE",
+        "SELECTED:CHOOSE_AXIS",
+        "EMIT"
+      ],
+      "new_position": [
+        0.42784609690826525,
+        0.30784609690826525,
+        0.30784609690826525
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 4,
+      "position": [
+        0.42784609690826525,
+        0.30784609690826525,
+        0.30784609690826525
+      ],
+      "velocity": [
+        0.24,
+        0.0,
+        0.0
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "SAFE",
+        "SELECTED:CONTINUE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.5478460969082652,
+        0.30784609690826525,
+        0.30784609690826525
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 5,
+      "position": [
+        0.5478460969082652,
+        0.30784609690826525,
+        0.30784609690826525
+      ],
+      "velocity": [
+        0.24,
+        0.0,
+        0.0
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "SAFE",
+        "SELECTED:CONTINUE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.6678460969082652,
+        0.30784609690826525,
+        0.30784609690826525
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 6,
+      "position": [
+        0.6678460969082652,
+        0.30784609690826525,
+        0.30784609690826525
+      ],
+      "velocity": [
+        0.24,
+        0.0,
+        0.0
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "SAFE",
+        "SELECTED:CONTINUE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.7878460969082652,
+        0.30784609690826525,
+        0.30784609690826525
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 7,
+      "position": [
+        0.7878460969082652,
+        0.30784609690826525,
+        0.30784609690826525
+      ],
+      "velocity": [
+        0.24,
+        0.0,
+        0.0
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "SAFE",
+        "SELECTED:CONTINUE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.9078460969082652,
+        0.30784609690826525,
+        0.30784609690826525
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 8,
+      "position": [
+        0.9078460969082652,
+        0.30784609690826525,
+        0.30784609690826525
+      ],
+      "velocity": [
+        -0.0022485174101127604,
+        0.16969817937953313,
+        0.16969817937953313
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "BLOCKED",
+        "CALL P003",
+        "GAP_WAIT_NOT_NEEDED",
+        "CALL P002",
+        "CALL P001",
+        "AIM GOAL",
+        "SAFE",
+        "SELECTED:GOAL",
+        "EMIT"
+      ],
+      "new_position": [
+        0.9067218382032088,
+        0.3926951865980318,
+        0.3926951865980318
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 9,
+      "position": [
+        0.9067218382032088,
+        0.3926951865980318,
+        0.3926951865980318
+      ],
+      "velocity": [
+        -0.0022485174101127604,
+        0.16969817937953313,
+        0.16969817937953313
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "SAFE",
+        "SELECTED:CONTINUE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.9055975794981524,
+        0.4775442762877984,
+        0.4775442762877984
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 10,
+      "position": [
+        0.9055975794981524,
+        0.4775442762877984,
+        0.4775442762877984
+      ],
+      "velocity": [
+        -0.0022485174101127604,
+        0.16969817937953313,
+        0.16969817937953313
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "SAFE",
+        "SELECTED:CONTINUE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.9044733207930961,
+        0.562393365977565,
+        0.562393365977565
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 11,
+      "position": [
+        0.9044733207930961,
+        0.562393365977565,
+        0.562393365977565
+      ],
+      "velocity": [
+        -0.0022485174101127604,
+        0.16969817937953313,
+        0.16969817937953313
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "SAFE",
+        "SELECTED:CONTINUE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.9033490620880397,
+        0.6472424556673315,
+        0.6472424556673315
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 12,
+      "position": [
+        0.9033490620880397,
+        0.6472424556673315,
+        0.6472424556673315
+      ],
+      "velocity": [
+        -0.0022485174101127604,
+        0.16969817937953313,
+        0.16969817937953313
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "SAFE",
+        "SELECTED:CONTINUE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.9022248033829833,
+        0.7320915453570981,
+        0.7320915453570981
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 13,
+      "position": [
+        0.9022248033829833,
+        0.7320915453570981,
+        0.7320915453570981
+      ],
+      "velocity": [
+        -0.0022485174101127604,
+        0.16969817937953313,
+        0.16969817937953313
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "SAFE",
+        "SELECTED:CONTINUE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.9011005446779269,
+        0.8169406350468646,
+        0.8169406350468646
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 14,
+      "position": [
+        0.9011005446779269,
+        0.8169406350468646,
+        0.8169406350468646
+      ],
+      "velocity": [
+        -0.0022485174101127604,
+        0.16969817937953313,
+        0.16969817937953313
+      ],
+      "vm": [
+        "AIM CONTINUE",
+        "SAFE",
+        "SELECTED:CONTINUE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.8999762859728705,
+        0.9017897247366312,
+        0.9017897247366312
+      ],
+      "collision": false,
+      "shield_intervention": false
+    }
+  ]
+}

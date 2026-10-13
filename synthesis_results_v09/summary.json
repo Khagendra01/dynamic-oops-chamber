@@ -1,0 +1,104 @@
+{
+  "environment": {
+    "python": "3.11.2",
+    "platform": "Linux-6.12.96+rpt-rpi-2712-aarch64-with-glibc2.36"
+  },
+  "repeats": 1,
+  "parameters": {
+    "holdout": 100,
+    "promote_after": 2,
+    "max_nodes": 96,
+    "max_probe_steps": 4
+  },
+  "programs": [
+    {
+      "id": "P001",
+      "rules": [
+        "GOAL"
+      ]
+    },
+    {
+      "id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ]
+    },
+    {
+      "id": "P003",
+      "rules": [
+        "WAIT_GAP",
+        "CALL:P002"
+      ]
+    },
+    {
+      "id": "P004",
+      "rules": [
+        "CONTINUE",
+        "CALL:P003"
+      ]
+    }
+  ],
+  "summary": {
+    "replay": {
+      "promote_after": 2,
+      "stages": 8,
+      "search_work_units": 119251,
+      "candidates_evaluated": 1133,
+      "instructions": 117961,
+      "steps": 18775,
+      "nodes_built": 0,
+      "checkpoint_hits": 0,
+      "node_evictions": 0,
+      "peak_nodes": 0,
+      "extra_parent_steps": 0,
+      "restore_calls": 0,
+      "heldout_success": 97,
+      "heldout_collisions": 3,
+      "heldout_total": 100,
+      "median_train_seconds": 3.788424979999945,
+      "min_train_seconds": 3.788424979999945,
+      "max_train_seconds": 3.788424979999945
+    },
+    "snapshot": {
+      "promote_after": 2,
+      "stages": 8,
+      "search_work_units": 119251,
+      "candidates_evaluated": 1133,
+      "instructions": 119464,
+      "steps": 19043,
+      "nodes_built": 23,
+      "checkpoint_hits": 143,
+      "node_evictions": 0,
+      "peak_nodes": 73,
+      "extra_parent_steps": 476,
+      "restore_calls": 143,
+      "heldout_success": 97,
+      "heldout_collisions": 3,
+      "heldout_total": 100,
+      "median_train_seconds": 3.7250252710000495,
+      "min_train_seconds": 3.7250252710000495,
+      "max_train_seconds": 3.7250252710000495
+    },
+    "undo": {
+      "promote_after": 2,
+      "stages": 8,
+      "search_work_units": 119251,
+      "candidates_evaluated": 1133,
+      "instructions": 119464,
+      "steps": 19043,
+      "nodes_built": 23,
+      "checkpoint_hits": 143,
+      "node_evictions": 0,
+      "peak_nodes": 73,
+      "extra_parent_steps": 476,
+      "restore_calls": 143,
+      "heldout_success": 97,
+      "heldout_collisions": 3,
+      "heldout_total": 100,
+      "median_train_seconds": 4.196008646999871,
+      "min_train_seconds": 4.196008646999871,
+      "max_train_seconds": 4.196008646999871
+    }
+  }
+}

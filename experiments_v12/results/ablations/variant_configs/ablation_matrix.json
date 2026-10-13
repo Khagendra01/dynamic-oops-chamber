@@ -1,0 +1,172 @@
+{
+  "format": "oops-v12-ablation-matrix-1.0",
+  "factors": [
+    "reuse",
+    "cumulative",
+    "memory"
+  ],
+  "controlled_constants": [
+    "conditional_geometric_branching",
+    "live_replanning"
+  ],
+  "variants": [
+    {
+      "id": "C1",
+      "label": "minimal baseline",
+      "reuse": false,
+      "cumulative": false,
+      "memory": false,
+      "note": "All three factors off; not a single-factor comparison.",
+      "factors": {
+        "reuse": false,
+        "cumulative": false,
+        "memory": false
+      },
+      "controlled_constants": [
+        "conditional_geometric_branching",
+        "live_replanning"
+      ]
+    },
+    {
+      "id": "C2",
+      "label": "no frozen reuse",
+      "reuse": false,
+      "cumulative": true,
+      "memory": true,
+      "note": "Isolates frozen-code reuse (C5 vs C2).",
+      "factors": {
+        "reuse": false,
+        "cumulative": true,
+        "memory": true
+      },
+      "controlled_constants": [
+        "conditional_geometric_branching",
+        "live_replanning"
+      ]
+    },
+    {
+      "id": "C3",
+      "label": "no cumulative validation",
+      "reuse": true,
+      "cumulative": false,
+      "memory": true,
+      "note": "Isolates cumulative curriculum validation (C5 vs C3).",
+      "factors": {
+        "reuse": true,
+        "cumulative": false,
+        "memory": true
+      },
+      "controlled_constants": [
+        "conditional_geometric_branching",
+        "live_replanning"
+      ]
+    },
+    {
+      "id": "C4",
+      "label": "stateless runtime",
+      "reuse": true,
+      "cumulative": true,
+      "memory": false,
+      "note": "Isolates persistent runtime memory (C5 vs C4).",
+      "factors": {
+        "reuse": true,
+        "cumulative": true,
+        "memory": false
+      },
+      "controlled_constants": [
+        "conditional_geometric_branching",
+        "live_replanning"
+      ]
+    },
+    {
+      "id": "C5",
+      "label": "full system",
+      "reuse": true,
+      "cumulative": true,
+      "memory": true,
+      "note": "Reference configuration for Paper 1.",
+      "factors": {
+        "reuse": true,
+        "cumulative": true,
+        "memory": true
+      },
+      "controlled_constants": [
+        "conditional_geometric_branching",
+        "live_replanning"
+      ]
+    },
+    {
+      "id": "F001",
+      "label": "memory only",
+      "reuse": false,
+      "cumulative": false,
+      "memory": true,
+      "note": "Factorial cell: memory without reuse or cumulative validation.",
+      "factors": {
+        "reuse": false,
+        "cumulative": false,
+        "memory": true
+      },
+      "controlled_constants": [
+        "conditional_geometric_branching",
+        "live_replanning"
+      ]
+    },
+    {
+      "id": "F010",
+      "label": "cumulative only",
+      "reuse": false,
+      "cumulative": true,
+      "memory": false,
+      "note": "Factorial cell: cumulative validation alone.",
+      "factors": {
+        "reuse": false,
+        "cumulative": true,
+        "memory": false
+      },
+      "controlled_constants": [
+        "conditional_geometric_branching",
+        "live_replanning"
+      ]
+    },
+    {
+      "id": "F100",
+      "label": "reuse only",
+      "reuse": true,
+      "cumulative": false,
+      "memory": false,
+      "note": "Factorial cell: reuse alone.",
+      "factors": {
+        "reuse": true,
+        "cumulative": false,
+        "memory": false
+      },
+      "controlled_constants": [
+        "conditional_geometric_branching",
+        "live_replanning"
+      ]
+    }
+  ],
+  "primary_contrasts": [
+    {
+      "left": "C5",
+      "right": "C2",
+      "factor": "frozen-code reuse"
+    },
+    {
+      "left": "C5",
+      "right": "C3",
+      "factor": "cumulative curriculum validation"
+    },
+    {
+      "left": "C5",
+      "right": "C4",
+      "factor": "persistent runtime memory"
+    },
+    {
+      "left": "C1",
+      "right": "C5",
+      "factor": "overall system (three factors; not single-factor)"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "scene": "empty",
+    "mode": "replay",
+    "repeat_count": 5,
+    "median_seconds": 0.0050491,
+    "instructions": 420,
+    "physics_steps": 84,
+    "journal_entries": 0,
+    "successes": 7
+  },
+  {
+    "scene": "empty",
+    "mode": "snapshot",
+    "repeat_count": 5,
+    "median_seconds": 0.0006733,
+    "instructions": 60,
+    "physics_steps": 12,
+    "journal_entries": 0,
+    "successes": 7
+  },
+  {
+    "scene": "empty",
+    "mode": "undo",
+    "repeat_count": 5,
+    "median_seconds": 0.0007568,
+    "instructions": 60,
+    "physics_steps": 12,
+    "journal_entries": 84,
+    "successes": 7
+  },
+  {
+    "scene": "static",
+    "mode": "replay",
+    "repeat_count": 5,
+    "median_seconds": 0.0222896,
+    "instructions": 1024,
+    "physics_steps": 167,
+    "journal_entries": 0,
+    "successes": 5
+  },
+  {
+    "scene": "static",
+    "mode": "snapshot",
+    "repeat_count": 5,
+    "median_seconds": 0.0222212,
+    "instructions": 916,
+    "physics_steps": 149,
+    "journal_entries": 0,
+    "successes": 5
+  },
+  {
+    "scene": "static",
+    "mode": "undo",
+    "repeat_count": 5,
+    "median_seconds": 0.0262809,
+    "instructions": 916,
+    "physics_steps": 149,
+    "journal_entries": 1215,
+    "successes": 5
+  },
+  {
+    "scene": "moving",
+    "mode": "replay",
+    "repeat_count": 5,
+    "median_seconds": 0.0328285,
+    "instructions": 963,
+    "physics_steps": 159,
+    "journal_entries": 0,
+    "successes": 5
+  },
+  {
+    "scene": "moving",
+    "mode": "snapshot",
+    "repeat_count": 5,
+    "median_seconds": 0.0282235,
+    "instructions": 855,
+    "physics_steps": 141,
+    "journal_entries": 0,
+    "successes": 5
+  },
+  {
+    "scene": "moving",
+    "mode": "undo",
+    "repeat_count": 5,
+    "median_seconds": 0.0379318,
+    "instructions": 855,
+    "physics_steps": 141,
+    "journal_entries": 1138,
+    "successes": 5
+  },
+  {
+    "scene": "crossing",
+    "mode": "replay",
+    "repeat_count": 5,
+    "median_seconds": 0.0091994,
+    "instructions": 389,
+    "physics_steps": 69,
+    "journal_entries": 0,
+    "successes": 7
+  },
+  {
+    "scene": "crossing",
+    "mode": "snapshot",
+    "repeat_count": 5,
+    "median_seconds": 0.0079235,
+    "instructions": 311,
+    "physics_steps": 57,
+    "journal_entries": 0,
+    "successes": 7
+  },
+  {
+    "scene": "crossing",
+    "mode": "undo",
+    "repeat_count": 5,
+    "median_seconds": 0.0090781,
+    "instructions": 311,
+    "physics_steps": 57,
+    "journal_entries": 426,
+    "successes": 7
+  }
+]

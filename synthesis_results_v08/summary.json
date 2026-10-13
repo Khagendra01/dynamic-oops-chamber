@@ -1,0 +1,50 @@
+{
+  "replay": {
+    "stages": 8,
+    "final_rules": [
+      "CONTINUE",
+      "CALL:P003"
+    ],
+    "total_work": 119251,
+    "total_evaluations": 1133,
+    "physics_steps": 18775,
+    "vm_instructions": 117961,
+    "checkpoint_hits": 0,
+    "undo_rollbacks": 0,
+    "snapshot_restores": 0,
+    "seconds": 2.032,
+    "heldout_20": 19
+  },
+  "snapshot": {
+    "stages": 8,
+    "final_rules": [
+      "CONTINUE",
+      "CALL:P003"
+    ],
+    "total_work": 119251,
+    "total_evaluations": 1133,
+    "physics_steps": 19616,
+    "vm_instructions": 122791,
+    "checkpoint_hits": 251,
+    "undo_rollbacks": 0,
+    "snapshot_restores": 251,
+    "seconds": 2.2659,
+    "heldout_20": 19
+  },
+  "undo": {
+    "stages": 8,
+    "final_rules": [
+      "CONTINUE",
+      "CALL:P003"
+    ],
+    "total_work": 119251,
+    "total_evaluations": 1133,
+    "physics_steps": 19616,
+    "vm_instructions": 122791,
+    "checkpoint_hits": 251,
+    "undo_rollbacks": 251,
+    "snapshot_restores": 0,
+    "seconds": 2.5997,
+    "heldout_20": 19
+  }
+}

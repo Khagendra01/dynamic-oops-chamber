@@ -1,0 +1,82 @@
+[
+  {
+    "stage": "empty",
+    "program": "P001",
+    "found_lane": "fresh",
+    "tested": 1,
+    "require_explicit_wait": false,
+    "forbid_fallback": false,
+    "max_trace_events": null,
+    "max_work_units": null
+  },
+  {
+    "stage": "static",
+    "program": "P002",
+    "found_lane": "extend",
+    "tested": 11,
+    "require_explicit_wait": false,
+    "forbid_fallback": false,
+    "max_trace_events": null,
+    "max_work_units": null
+  },
+  {
+    "stage": "north_blocked",
+    "program": "P002",
+    "found_lane": "reused",
+    "tested": 0,
+    "require_explicit_wait": false,
+    "forbid_fallback": false,
+    "max_trace_events": null,
+    "max_work_units": null
+  },
+  {
+    "stage": "south_blocked",
+    "program": "P002",
+    "found_lane": "reused",
+    "tested": 0,
+    "require_explicit_wait": false,
+    "forbid_fallback": false,
+    "max_trace_events": null,
+    "max_work_units": null
+  },
+  {
+    "stage": "crossing",
+    "program": "P003",
+    "found_lane": "extend",
+    "tested": 21,
+    "require_explicit_wait": true,
+    "forbid_fallback": true,
+    "max_trace_events": null,
+    "max_work_units": null
+  },
+  {
+    "stage": "moving_gate",
+    "program": "P003",
+    "found_lane": "reused",
+    "tested": 0,
+    "require_explicit_wait": true,
+    "forbid_fallback": true,
+    "max_trace_events": null,
+    "max_work_units": null
+  },
+  {
+    "stage": "moving",
+    "program": "P003",
+    "found_lane": "reused",
+    "tested": 0,
+    "require_explicit_wait": false,
+    "forbid_fallback": false,
+    "max_trace_events": null,
+    "max_work_units": null
+  },
+  {
+    "stage": "efficient_empty",
+    "program": "P004",
+    "found_lane": "extend",
+    "tested": 9,
+    "require_explicit_wait": false,
+    "forbid_fallback": false,
+    "max_trace_events": null,
+    "max_work_units": 70
+  }
+]

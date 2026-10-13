@@ -1,0 +1,25 @@
+backend,stage,success,program,rules,lane,phase_budget,work_units,replay_calls,tested
+replay,empty,True,P001,GOAL,fresh,512,343,10,11
+replay,static,True,P002,GOAL CHOOSE_AXIS,extend,4096,4056,26,71
+replay,north_blocked,True,P002,GOAL CHOOSE_AXIS,reused,0,92,1,1
+replay,south_blocked,True,P002,GOAL CHOOSE_AXIS,reused,0,92,1,1
+replay,crossing,True,P003,WAIT_GAP CALL:P002,fresh,65536,47617,598,1583
+replay,moving_gate,True,P003,WAIT_GAP CALL:P002,reused,0,92,1,1
+replay,moving,True,P003,WAIT_GAP CALL:P002,reused,0,185,1,1
+replay,efficient_empty,True,P004,CONTINUE CALL:P003,fresh,65536,66774,495,1320
+snapshot,empty,True,P001,GOAL,fresh,512,343,10,11
+snapshot,static,True,P002,GOAL CHOOSE_AXIS,extend,4096,4056,26,71
+snapshot,north_blocked,True,P002,GOAL CHOOSE_AXIS,reused,0,92,1,1
+snapshot,south_blocked,True,P002,GOAL CHOOSE_AXIS,reused,0,92,1,1
+snapshot,crossing,True,P003,WAIT_GAP CALL:P002,fresh,65536,47617,598,1583
+snapshot,moving_gate,True,P003,WAIT_GAP CALL:P002,reused,0,92,1,1
+snapshot,moving,True,P003,WAIT_GAP CALL:P002,reused,0,185,1,1
+snapshot,efficient_empty,True,P004,CONTINUE CALL:P003,fresh,65536,66774,495,1320
+undo,empty,True,P001,GOAL,fresh,512,343,10,11
+undo,static,True,P002,GOAL CHOOSE_AXIS,extend,4096,4056,26,71
+undo,north_blocked,True,P002,GOAL CHOOSE_AXIS,reused,0,92,1,1
+undo,south_blocked,True,P002,GOAL CHOOSE_AXIS,reused,0,92,1,1
+undo,crossing,True,P003,WAIT_GAP CALL:P002,fresh,65536,47617,598,1583
+undo,moving_gate,True,P003,WAIT_GAP CALL:P002,reused,0,92,1,1
+undo,moving,True,P003,WAIT_GAP CALL:P002,reused,0,185,1,1
+undo,efficient_empty,True,P004,CONTINUE CALL:P003,fresh,65536,66774,495,1320

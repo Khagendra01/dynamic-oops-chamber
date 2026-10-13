@@ -1,0 +1,213 @@
+{
+  "setup": {
+    "random_seed_range": [
+      100,
+      199
+    ],
+    "all_variants_run_same_scenes": true,
+    "ablation_type": "remove opcode recursively from frozen library",
+    "note": "Memory reset each observation is distinct from fresh synthesis. Hand-designed primitives remain."
+  },
+  "random_scenes": {
+    "complete": {
+      "episodes": 100,
+      "successes": 97,
+      "collisions": 3,
+      "mean_steps_successes": 13.041237113402062,
+      "mean_work_units": 77.81,
+      "mean_fallback_waits": 0.03,
+      "mean_explicit_waits": 0.4,
+      "mean_continued_actions": 10.77
+    },
+    "no_axis": {
+      "episodes": 100,
+      "successes": 73,
+      "collisions": 27,
+      "mean_steps_successes": 12.26027397260274,
+      "mean_work_units": 60.48,
+      "mean_fallback_waits": 0.31,
+      "mean_explicit_waits": 0.35,
+      "mean_continued_actions": 9.25
+    },
+    "no_gap_wait": {
+      "episodes": 100,
+      "successes": 98,
+      "collisions": 2,
+      "mean_steps_successes": 13.112244897959183,
+      "mean_work_units": 74.18,
+      "mean_fallback_waits": 0.02,
+      "mean_explicit_waits": 0.0,
+      "mean_continued_actions": 10.9
+    },
+    "no_continuation": {
+      "episodes": 100,
+      "successes": 98,
+      "collisions": 2,
+      "mean_steps_successes": 12.938775510204081,
+      "mean_work_units": 181.1,
+      "mean_fallback_waits": 0.02,
+      "mean_explicit_waits": 0.42,
+      "mean_continued_actions": 0.0
+    },
+    "reset_memory_each_step": {
+      "episodes": 100,
+      "successes": 98,
+      "collisions": 2,
+      "mean_steps_successes": 12.938775510204081,
+      "mean_work_units": 206.7,
+      "mean_fallback_waits": 0.02,
+      "mean_explicit_waits": 0.42,
+      "mean_continued_actions": 0.0
+    }
+  },
+  "targeted_scenes": {
+    "moving_gate": {
+      "complete": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 1,
+        "continued_actions": 6,
+        "work_units": 49
+      },
+      "no_axis": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 1,
+        "continued_actions": 6,
+        "work_units": 49
+      },
+      "no_gap_wait": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 6,
+        "work_units": 56
+      },
+      "no_continuation": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 1,
+        "continued_actions": 0,
+        "work_units": 105
+      },
+      "reset_memory_each_step": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 1,
+        "continued_actions": 0,
+        "work_units": 121
+      }
+    },
+    "north_blocked": {
+      "complete": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 4,
+        "work_units": 139
+      },
+      "no_axis": {
+        "success": 0,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 1,
+        "work_units": 815
+      },
+      "no_gap_wait": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 4,
+        "work_units": 115
+      },
+      "no_continuation": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 0,
+        "work_units": 153
+      },
+      "reset_memory_each_step": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 0,
+        "work_units": 171
+      }
+    },
+    "south_blocked": {
+      "complete": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 4,
+        "work_units": 139
+      },
+      "no_axis": {
+        "success": 0,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 1,
+        "work_units": 815
+      },
+      "no_gap_wait": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 4,
+        "work_units": 115
+      },
+      "no_continuation": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 0,
+        "work_units": 153
+      },
+      "reset_memory_each_step": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 0,
+        "work_units": 171
+      }
+    },
+    "empty": {
+      "complete": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 11,
+        "work_units": 60
+      },
+      "no_axis": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 11,
+        "work_units": 60
+      },
+      "no_gap_wait": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 11,
+        "work_units": 56
+      },
+      "no_continuation": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 0,
+        "work_units": 168
+      },
+      "reset_memory_each_step": {
+        "success": 1,
+        "collision": 0,
+        "explicit_waits": 0,
+        "continued_actions": 0,
+        "work_units": 192
+      }
+    }
+  }
+}

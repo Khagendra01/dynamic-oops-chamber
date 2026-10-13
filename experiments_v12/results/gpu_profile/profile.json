@@ -1,0 +1,16 @@
+{
+  "format": "oops-v12-gpu-profile-1.0",
+  "dynamic_scenarios": {
+    "episodes": 50,
+    "wall_time_s": 0.13606285000423668,
+    "episodes_per_second": 367.4772356924988,
+    "mean_steps": 9.18,
+    "success_rate": 0.94,
+    "program_id": "P002",
+    "rules": [
+      "GOAL",
+      "CHOOSE_AXIS"
+    ],
+    "note": "CPU only: v1.2 dynamic chambers (events, appear/disappear) are not covered by the batched cuboid engine."
+  }
+}

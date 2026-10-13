@@ -1,0 +1,415 @@
+{
+  "episode": {
+    "success": true,
+    "collision": false,
+    "interventions": 0,
+    "steps": 15,
+    "fallback_waits": 4
+  },
+  "trace": [
+    {
+      "step": 0,
+      "position": [
+        0.1,
+        0.5,
+        0.5
+      ],
+      "velocity": [
+        0.24,
+        0.0,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "SAFE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.22,
+        0.5,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 1,
+      "position": [
+        0.22,
+        0.5,
+        0.5
+      ],
+      "velocity": [
+        0.24,
+        0.0,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "SAFE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.33999999999999997,
+        0.5,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 2,
+      "position": [
+        0.33999999999999997,
+        0.5,
+        0.5
+      ],
+      "velocity": [
+        0.0,
+        0.24,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "BLOCKED",
+        "AIM Y_POS",
+        "SAFE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.33999999999999997,
+        0.62,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 3,
+      "position": [
+        0.33999999999999997,
+        0.62,
+        0.5
+      ],
+      "velocity": [
+        0.0,
+        0.24,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "BLOCKED",
+        "AIM Y_POS",
+        "SAFE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.33999999999999997,
+        0.74,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 4,
+      "position": [
+        0.33999999999999997,
+        0.74,
+        0.5
+      ],
+      "velocity": [
+        0.0,
+        0.24,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "BLOCKED",
+        "AIM Y_POS",
+        "SAFE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.33999999999999997,
+        0.86,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 5,
+      "position": [
+        0.33999999999999997,
+        0.86,
+        0.5
+      ],
+      "velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "BLOCKED",
+        "AIM Y_POS",
+        "BLOCKED",
+        "FALLBACK WAIT"
+      ],
+      "new_position": [
+        0.33999999999999997,
+        0.86,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 6,
+      "position": [
+        0.33999999999999997,
+        0.86,
+        0.5
+      ],
+      "velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "BLOCKED",
+        "AIM Y_POS",
+        "BLOCKED",
+        "FALLBACK WAIT"
+      ],
+      "new_position": [
+        0.33999999999999997,
+        0.86,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 7,
+      "position": [
+        0.33999999999999997,
+        0.86,
+        0.5
+      ],
+      "velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "BLOCKED",
+        "AIM Y_POS",
+        "BLOCKED",
+        "FALLBACK WAIT"
+      ],
+      "new_position": [
+        0.33999999999999997,
+        0.86,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 8,
+      "position": [
+        0.33999999999999997,
+        0.86,
+        0.5
+      ],
+      "velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "BLOCKED",
+        "AIM Y_POS",
+        "BLOCKED",
+        "FALLBACK WAIT"
+      ],
+      "new_position": [
+        0.33999999999999997,
+        0.86,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 9,
+      "position": [
+        0.33999999999999997,
+        0.86,
+        0.5
+      ],
+      "velocity": [
+        0.20188283409037283,
+        -0.12978182191523965,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "SAFE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.4409414170451864,
+        0.7951090890423802,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 10,
+      "position": [
+        0.4409414170451864,
+        0.7951090890423802,
+        0.5
+      ],
+      "velocity": [
+        0.20188283409037283,
+        -0.12978182191523968,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "SAFE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.5418828340903729,
+        0.7302181780847603,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 11,
+      "position": [
+        0.5418828340903729,
+        0.7302181780847603,
+        0.5
+      ],
+      "velocity": [
+        0.20188283409037286,
+        -0.12978182191523968,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "SAFE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.6428242511355593,
+        0.6653272671271404,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 12,
+      "position": [
+        0.6428242511355593,
+        0.6653272671271404,
+        0.5
+      ],
+      "velocity": [
+        0.20188283409037286,
+        -0.12978182191523965,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "SAFE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.7437656681807457,
+        0.6004363561695206,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 13,
+      "position": [
+        0.7437656681807457,
+        0.6004363561695206,
+        0.5
+      ],
+      "velocity": [
+        0.20188283409037283,
+        -0.12978182191523968,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "SAFE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.8447070852259322,
+        0.5355454452119008,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    },
+    {
+      "step": 14,
+      "position": [
+        0.8447070852259322,
+        0.5355454452119008,
+        0.5
+      ],
+      "velocity": [
+        0.11058582954813567,
+        -0.07109089042380168,
+        0.0
+      ],
+      "vm": [
+        "CALL P001",
+        "AIM GOAL",
+        "SAFE",
+        "EMIT"
+      ],
+      "new_position": [
+        0.9,
+        0.5,
+        0.5
+      ],
+      "collision": false,
+      "shield_intervention": false
+    }
+  ]
+}
