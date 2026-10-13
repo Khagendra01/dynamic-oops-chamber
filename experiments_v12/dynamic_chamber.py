@@ -19,8 +19,18 @@ trajectory is split wherever its velocity changes (wall bounce, schedule knot,
 appearance or disappearance) and the relative motion is tested with the exact
 slab intersection from ``chamber._segment_hits_aabb``.
 
-A pure-``Cuboid`` scene built here reproduces ``ChamberEnv`` exactly; that is
-asserted by ``tests/test_dynamic_chamber.py``.
+v1.2.1 — causal execution shield
+--------------------------------
+``step()`` no longer gates execution on the simulator's exact future obstacle
+trajectories (the v1.2 "oracle shield").  Execution is filtered only by
+``oops_language.predicted_safe`` evaluated on a *served observation* — by
+default the env's own perfect current observation, or, when
+``shield_observer`` is attached (the evaluation harness attaches the same
+``CausalObserver`` the policy sees), on that degraded observation.  Ground
+truth via ``is_motion_safe`` is used **only after execution** to *detect*
+whether the executed motion (or a wait) collided — a metric, never an
+executor filter.  A pure-``Cuboid`` scene built here reproduces
+``ChamberEnv`` exactly; that is asserted by ``tests/test_dynamic_chamber.py``.
 """
 from __future__ import annotations
 
@@ -30,6 +40,7 @@ from typing import Sequence
 
 from chamber import (Cuboid, Observation, ObstacleObservation, StepResult, Vec3,
                      _segment_hits_aabb, add, lerp, mul, norm, sub, vec)
+from oops_language import MotionConfig, predicted_safe
 
 _EPS = 1e-10
 
@@ -254,6 +265,11 @@ class DynamicChamber:
             box.validate(self.chamber_size)
         if not self.is_position_inside(self.start) or not self.is_position_inside(self.goal):
             raise ValueError("start and goal must be inside the chamber")
+        # Causal execution shield: None -> perfect current observation; the
+        # evaluation harness attaches the policy's CausalObserver instead.
+        self.shield_observer = None
+        self._shield_config = MotionConfig(radius=self.radius, dt=self.dt,
+                                           max_speed=self.max_speed)
         self.reset()
 
     # ------------------------------------------------------------------ state
@@ -330,14 +346,20 @@ class DynamicChamber:
             raise ValueError(f"speed {norm(velocity):.3f} exceeds max_speed {self.max_speed}")
         desired = add(self.position, mul(velocity, self.dt))
         end_time = self.time_s + self.dt
-        safe = self.is_motion_safe(self.position, desired, self.time_s, end_time)
+        # Causal execution shield: predict safety from a *served* observation
+        # only (the policy's own degraded view when an observer is attached,
+        # otherwise the perfect current observation).  Never the simulator's
+        # exact future trajectories.
+        shield_obs = (self.shield_observer.observe(self)
+                      if self.shield_observer is not None else self.observe())
+        safe = predicted_safe(shield_obs, velocity, self._shield_config)
         intervention = not safe
-        collision = False
-        if safe:
-            self.position = desired
-        else:
-            collision = not self.is_motion_safe(self.position, self.position,
-                                                self.time_s, end_time)
+        executed = desired if safe else self.position
+        # Ground truth is used *after the fact* solely to detect whether the
+        # executed motion (or the forced wait) collided — a metric, not a filter.
+        collision = not self.is_motion_safe(self.position, executed,
+                                            self.time_s, end_time)
+        self.position = executed
         self.step_index += 1
         reached = norm(sub(self.position, self.goal)) <= self.goal_tolerance
         self.done = reached or collision or self.step_index >= self.max_steps

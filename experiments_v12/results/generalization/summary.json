@@ -79,46 +79,46 @@
     {
       "level": 3,
       "n": 1000,
-      "rate": 0.98,
-      "ci_low": 0.9693097584861028,
-      "ci_high": 0.9870164188709625,
-      "successes": 980,
-      "collision_rate": 0.02,
-      "mean_steps_solved": 7.479591836734694
+      "rate": 0.97,
+      "ci_low": 0.95749631851849,
+      "ci_high": 0.978906396810303,
+      "successes": 970,
+      "collision_rate": 0.03,
+      "mean_steps_solved": 7.469072164948454
     },
     {
       "level": 4,
       "n": 1000,
-      "rate": 0.915,
-      "ci_low": 0.8960867310553456,
-      "ci_high": 0.9307369431179503,
-      "successes": 915,
-      "collision_rate": 0.02,
-      "mean_steps_solved": 7.273224043715847
+      "rate": 0.91,
+      "ci_low": 0.8906578220441299,
+      "ci_high": 0.92620412111503,
+      "successes": 910,
+      "collision_rate": 0.025,
+      "mean_steps_solved": 7.252747252747253
     },
     {
       "level": 5,
       "n": 1000,
-      "rate": 0.245,
-      "ci_low": 0.21935194381744014,
-      "ci_high": 0.2725997744616191,
-      "successes": 245,
-      "collision_rate": 0.67,
-      "mean_steps_solved": 8.73469387755102
+      "rate": 0.23,
+      "ci_low": 0.20497925388093172,
+      "ci_high": 0.25708727135571924,
+      "successes": 230,
+      "collision_rate": 0.685,
+      "mean_steps_solved": 8.717391304347826
     }
   ],
   "test_overall": [
     {
       "method": "C5",
       "n": 5000,
-      "success_rate": 0.792,
-      "collision_rate": 0.146,
-      "mean_steps": 9.421,
-      "mean_steps_solved": 7.415404040404041,
-      "mean_interventions": 0.158,
-      "mean_path_length_m": 1.0881937816819824,
-      "mean_min_clearance_m": 0.07109373549618815,
-      "mean_decision_latency_s": 0.00015975560894501665,
+      "success_rate": 0.786,
+      "collision_rate": 0.152,
+      "mean_steps": 9.368,
+      "mean_steps_solved": 7.402035623409669,
+      "mean_interventions": 0.112,
+      "mean_path_length_m": 1.0880906893128863,
+      "mean_min_clearance_m": 0.07091108618373458,
+      "mean_decision_latency_s": 0.00015472368275181708,
       "deadline_misses": 0
     }
   ],
@@ -126,14 +126,14 @@
     {
       "method": "C5",
       "n": 1000,
-      "success_rate": 0.785,
-      "collision_rate": 0.155,
-      "mean_steps": 9.25,
-      "mean_steps_solved": 7.312101910828026,
-      "mean_interventions": 0.17,
-      "mean_path_length_m": 1.066556768035202,
-      "mean_min_clearance_m": 0.07245297415593496,
-      "mean_decision_latency_s": 0.00015303948190202154,
+      "success_rate": 0.78,
+      "collision_rate": 0.16,
+      "mean_steps": 9.19,
+      "mean_steps_solved": 7.3076923076923075,
+      "mean_interventions": 0.125,
+      "mean_path_length_m": 1.064756768035202,
+      "mean_min_clearance_m": 0.0724914681866171,
+      "mean_decision_latency_s": 0.00014956099353659856,
       "deadline_misses": 0
     }
   ],
@@ -155,39 +155,39 @@
       "successes": 1820
     },
     "unseen": {
-      "rate": 0.7133333333333334,
-      "ci_low": 0.6968866223805359,
-      "ci_high": 0.7292343821358143,
+      "rate": 0.7033333333333334,
+      "ci_low": 0.6867357177309542,
+      "ci_high": 0.719410864698692,
       "n": 3000,
-      "successes": 2140
+      "successes": 2110
     },
-    "unseen_minus_seen": -0.19666666666666666
+    "unseen_minus_seen": -0.20666666666666667
   },
   "per_seed": [
     {
       "seed_index": 0,
       "program_id": "P002",
-      "success_rate": 0.792
+      "success_rate": 0.786
     },
     {
       "seed_index": 1,
       "program_id": "P001",
-      "success_rate": 0.792
+      "success_rate": 0.786
     },
     {
       "seed_index": 2,
       "program_id": "P002",
-      "success_rate": 0.792
+      "success_rate": 0.786
     },
     {
       "seed_index": 3,
       "program_id": "P001",
-      "success_rate": 0.792
+      "success_rate": 0.786
     },
     {
       "seed_index": 4,
       "program_id": "P002",
-      "success_rate": 0.792
+      "success_rate": 0.786
     }
   ]
 }

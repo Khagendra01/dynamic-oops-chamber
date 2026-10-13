@@ -20,10 +20,10 @@
       "collision_rate": 0.008333333333333333,
       "mean_steps": 9.208333333333334,
       "mean_steps_solved": 7.3628318584070795,
-      "mean_interventions": 0.008333333333333333,
-      "mean_path_length_m": 1.0740743622843463,
+      "mean_interventions": 0.0,
+      "mean_path_length_m": 1.075074362284346,
       "mean_min_clearance_m": 0.09524228187875657,
-      "mean_decision_latency_s": 9.803220075559224e-05,
+      "mean_decision_latency_s": 9.665107460938058e-05,
       "deadline_misses": 0
     },
     {
@@ -36,7 +36,7 @@
       "mean_interventions": 0.025,
       "mean_path_length_m": 0.8514999999999924,
       "mean_min_clearance_m": 0.08689268989524714,
-      "mean_decision_latency_s": 0.0029158252469574566,
+      "mean_decision_latency_s": 0.002877288471542052,
       "deadline_misses": 0
     },
     {
@@ -49,20 +49,20 @@
       "mean_interventions": 0.016666666666666666,
       "mean_path_length_m": 0.8683333333333365,
       "mean_min_clearance_m": 0.11531428521211931,
-      "mean_decision_latency_s": 0.018239322149291404,
-      "deadline_misses": 1
+      "mean_decision_latency_s": 0.018322107673221608,
+      "deadline_misses": 0
     },
     {
       "method": "static_astar[language]",
       "n": 600,
       "success_rate": 0.925,
       "collision_rate": 0.025,
-      "mean_steps": 11.516666666666667,
+      "mean_steps": 11.5,
       "mean_steps_solved": 9.846846846846846,
-      "mean_interventions": 0.03333333333333333,
+      "mean_interventions": 0.016666666666666666,
       "mean_path_length_m": 0.9108333333333343,
-      "mean_min_clearance_m": 0.10707408422650116,
-      "mean_decision_latency_s": 0.011024516368552131,
+      "mean_min_clearance_m": 0.10738509318333705,
+      "mean_decision_latency_s": 0.010897983150383803,
       "deadline_misses": 0
     }
   ],
@@ -78,7 +78,7 @@
       "mean_interventions": 0.0,
       "mean_path_length_m": 1.5497784274533575,
       "mean_min_clearance_m": 0.1023483682994252,
-      "mean_decision_latency_s": 0.00015545998276874555,
+      "mean_decision_latency_s": 0.0001586917161738453,
       "deadline_misses": 0
     },
     {
@@ -92,7 +92,7 @@
       "mean_interventions": 0.0,
       "mean_path_length_m": 0.8270135830369603,
       "mean_min_clearance_m": 0.08779761928795418,
-      "mean_decision_latency_s": 6.364406185704346e-05,
+      "mean_decision_latency_s": 5.846881699393896e-05,
       "deadline_misses": 0
     },
     {
@@ -103,10 +103,10 @@
       "collision_rate": 0.025,
       "mean_steps": 7.35,
       "mean_steps_solved": 7.461538461538462,
-      "mean_interventions": 0.025,
-      "mean_path_length_m": 0.8454310763627295,
+      "mean_interventions": 0.0,
+      "mean_path_length_m": 0.8484310763627296,
       "mean_min_clearance_m": 0.0955808580488906,
-      "mean_decision_latency_s": 7.49925576409877e-05,
+      "mean_decision_latency_s": 7.279269066035754e-05,
       "deadline_misses": 0
     },
     {
@@ -120,7 +120,7 @@
       "mean_interventions": 0.0,
       "mean_path_length_m": 0.8115000000000002,
       "mean_min_clearance_m": 0.10915831668632305,
-      "mean_decision_latency_s": 0.002858433441112412,
+      "mean_decision_latency_s": 0.002910265617361943,
       "deadline_misses": 0
     },
     {
@@ -134,7 +134,7 @@
       "mean_interventions": 0.025,
       "mean_path_length_m": 0.9525000000000007,
       "mean_min_clearance_m": 0.08387117414187228,
-      "mean_decision_latency_s": 0.0028595449567562887,
+      "mean_decision_latency_s": 0.0027522311019573544,
       "deadline_misses": 0
     },
     {
@@ -148,7 +148,7 @@
       "mean_interventions": 0.05,
       "mean_path_length_m": 0.7905000000000009,
       "mean_min_clearance_m": 0.0676485788575453,
-      "mean_decision_latency_s": 0.0030294973430036705,
+      "mean_decision_latency_s": 0.0029693686953068616,
       "deadline_misses": 0
     },
     {
@@ -162,7 +162,7 @@
       "mean_interventions": 0.0,
       "mean_path_length_m": 0.9249999999999997,
       "mean_min_clearance_m": 0.16660422055816113,
-      "mean_decision_latency_s": 0.044995257841608495,
+      "mean_decision_latency_s": 0.04551500334531672,
       "deadline_misses": 0
     },
     {
@@ -176,8 +176,8 @@
       "mean_interventions": 0.0,
       "mean_path_length_m": 0.8500000000000013,
       "mean_min_clearance_m": 0.0888839812669716,
-      "mean_decision_latency_s": 0.003908622931122005,
-      "deadline_misses": 1
+      "mean_decision_latency_s": 0.0037667626115526222,
+      "deadline_misses": 0
     },
     {
       "method": "space_time_astar[language]",
@@ -190,7 +190,7 @@
       "mean_interventions": 0.05,
       "mean_path_length_m": 0.8300000000000008,
       "mean_min_clearance_m": 0.0904546538112246,
-      "mean_decision_latency_s": 0.005814085675143691,
+      "mean_decision_latency_s": 0.005684557062795481,
       "deadline_misses": 0
     },
     {
@@ -204,7 +204,7 @@
       "mean_interventions": 0.0,
       "mean_path_length_m": 1.0599999999999996,
       "mean_min_clearance_m": 0.14130839896789163,
-      "mean_decision_latency_s": 0.018154804003857414,
+      "mean_decision_latency_s": 0.018265575268482458,
       "deadline_misses": 0
     },
     {
@@ -218,7 +218,7 @@
       "mean_interventions": 0.05,
       "mean_path_length_m": 0.8300000000000007,
       "mean_min_clearance_m": 0.08520816035985021,
-      "mean_decision_latency_s": 0.0097760084717856,
+      "mean_decision_latency_s": 0.009475020493940507,
       "deadline_misses": 0
     },
     {
@@ -227,12 +227,12 @@
       "n": 200,
       "success_rate": 0.975,
       "collision_rate": 0.025,
-      "mean_steps": 8.725,
+      "mean_steps": 8.675,
       "mean_steps_solved": 8.820512820512821,
-      "mean_interventions": 0.05,
+      "mean_interventions": 0.0,
       "mean_path_length_m": 0.8425000000000011,
-      "mean_min_clearance_m": 0.09470569335176132,
-      "mean_decision_latency_s": 0.0051427366300133915,
+      "mean_min_clearance_m": 0.09563872022226912,
+      "mean_decision_latency_s": 0.004953353688728471,
       "deadline_misses": 0
     }
   ],
@@ -628,18 +628,18 @@
         "neither": 5
       },
       "steps": {
-        "mean": -1.375,
-        "ci_low": -1.565,
-        "ci_high": -1.205,
+        "mean": -1.325,
+        "ci_low": -1.515,
+        "ci_high": -1.155,
         "n": 200,
         "n_samples": 10000,
         "seed": 20261013,
         "alpha": 0.05,
         "left_mean": 7.35,
-        "right_mean": 8.725,
+        "right_mean": 8.675,
         "wins": 0,
-        "losses": 195,
-        "ties": 5
+        "losses": 190,
+        "ties": 10
       }
     }
   },

@@ -5,6 +5,18 @@ scenario seeds, so uncertainty is estimated on per-scenario differences, not
 on independent samples.  Intervals are percentile bootstrap intervals over the
 paired differences; proportions additionally get Wilson intervals.
 
+v1.2.1 — independent-scene inference
+------------------------------------
+Rows that share a ``(scenario_id, level)`` cluster are correlated across
+training seeds (the same frozen program is replayed on the same scene with
+different observation-noise draws).  Bootstrapping rows therefore
+underestimates uncertainty: the reported +2.9 pp reuse contrast shrinks to
+[-7.5, +22.5] once scenes — not rows — are the resampling unit
+(:func:`clustered_paired_rate`).  Every contrast quoted in the v1.2.1 report
+is scene-clustered; row-level intervals are kept only for provenance.
+Per-training-seed contrasts (:func:`per_seed_contrasts`) expose seed
+heterogeneity that a pooled interval hides.
+
 Nothing here is seeded by wall-clock time, so re-running an analysis reproduces
 the same intervals.
 """
@@ -100,6 +112,100 @@ def paired_rate_comparison(left: Sequence[int], right: Sequence[int], *,
         "neither": sum(1 for a, b in zip(left, right) if not a and not b),
     })
     return interval
+
+
+def clustered_paired_rate(left_rows: Sequence[dict], right_rows: Sequence[dict], *,
+                          left_field: str = "success", right_field: str = "success",
+                          n_samples: int = DEFAULT_BOOTSTRAP_SAMPLES,
+                          seed: int = DEFAULT_BOOTSTRAP_SEED) -> dict:
+    """Scene-clustered difference of success rates (left - right).
+
+    Rows are paired on ``(seed_index, scenario_id, level)``; differences are
+    averaged *within each unique scene* (across training seeds) and the
+    bootstrap resamples scenes, so 5 training-seed rows of one scene count as
+    one independent unit.
+    """
+    def key(r: dict) -> tuple:
+        return (int(r.get("seed_index", r.get("seed", 0))),
+                str(r.get("scenario_id", "")), int(r.get("level", -1)))
+
+    right_map = {key(r): r for r in right_rows}
+    per_scene: dict[tuple, list[float]] = {}
+    left_rate_sum = right_rate_sum = 0.0
+    paired = 0
+    for left in left_rows:
+        right = right_map.get(key(left))
+        if right is None:
+            continue
+        d = float(bool(left[left_field])) - float(bool(right[right_field]))
+        scene = (str(left.get("scenario_id", "")), int(left.get("level", -1)))
+        per_scene.setdefault(scene, []).append(d)
+        left_rate_sum += float(bool(left[left_field]))
+        right_rate_sum += float(bool(right[right_field]))
+        paired += 1
+    scene_means = [sum(v) / len(v) for v in per_scene.values()]
+    interval = bootstrap_mean_ci(scene_means, n_samples=n_samples, seed=seed)
+    interval.update({
+        "unit": "scene",
+        "n_scenes": len(scene_means),
+        "n_paired_rows": paired,
+        "left_rate": left_rate_sum / paired if paired else 0.0,
+        "right_rate": right_rate_sum / paired if paired else 0.0,
+    })
+    return interval
+
+
+# Two-sided 97.5th percentile of Student's t by degrees of freedom (1..30).
+_T975 = {1: 12.706, 2: 4.303, 3: 3.182, 4: 2.776, 5: 2.571, 6: 2.447,
+         7: 2.365, 8: 2.306, 9: 2.262, 10: 2.228, 11: 2.201, 12: 2.179,
+         13: 2.160, 14: 2.145, 15: 2.131, 16: 2.120, 17: 2.110, 18: 2.101,
+         19: 2.093, 20: 2.086, 21: 2.080, 22: 2.074, 23: 2.069, 24: 2.064,
+         25: 2.060, 26: 2.056, 27: 2.052, 28: 2.048, 29: 2.045, 30: 2.042}
+
+
+def per_seed_contrasts(left_rows: Sequence[dict], right_rows: Sequence[dict], *,
+                       left_field: str = "success",
+                       right_field: str = "success") -> dict:
+    """Per-training-seed mean differences (left - right), pooled summary.
+
+    Returns ``{seed_index: {mean, n}}``, ``pooled_mean`` / ``seed_spread``,
+    and ``seed_t_ci`` — a Student-t interval over the per-seed means, which
+    is the honest interval for *seed-level* uncertainty (scene-clustered CIs
+    condition on the trained programs and cannot express it).
+    """
+    def key(r: dict) -> tuple:
+        return (int(r.get("seed_index", r.get("seed", 0))),
+                str(r.get("scenario_id", "")), int(r.get("level", -1)))
+
+    right_map = {key(r): r for r in right_rows}
+    by_seed: dict[int, list[float]] = {}
+    for left in left_rows:
+        right = right_map.get(key(left))
+        if right is None:
+            continue
+        d = float(bool(left[left_field])) - float(bool(right[right_field]))
+        si = int(left.get("seed_index", left.get("seed", 0)))
+        by_seed.setdefault(si, []).append(d)
+    per_seed = {s: {"mean": sum(v) / len(v), "n": len(v)}
+                for s, v in sorted(by_seed.items())}
+    all_d = [d for v in by_seed.values() for d in v]
+    means = [m["mean"] for m in per_seed.values()]
+    pooled = _mean(all_d)
+    seed_t_ci = None
+    if len(means) >= 2:
+        var = sum((m - pooled) ** 2 for m in means) / (len(means) - 1)
+        sem = math.sqrt(var / len(means))
+        t_crit = _T975.get(len(means) - 1, 1.96)
+        seed_t_ci = {"mean": pooled, "ci_low": pooled - t_crit * sem,
+                     "ci_high": pooled + t_crit * sem, "df": len(means) - 1,
+                     "sem": sem}
+    return {
+        "per_seed": per_seed,
+        "pooled_mean": pooled,
+        "seed_spread": (max(means) - min(means)) if means else 0.0,
+        "seed_t_ci": seed_t_ci,
+        "n": len(all_d),
+    }
 
 
 def order_rows(rows: list[dict], key: str, *, higher_is_better: bool = True

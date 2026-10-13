@@ -369,7 +369,7 @@
     }
   ],
   "totals": {
-    "wall_time_s": 0.3306361040013144,
+    "wall_time_s": 0.4564133230014704,
     "search_work_units": 5391,
     "replay_calls": 58,
     "prefixes_tested": 92,

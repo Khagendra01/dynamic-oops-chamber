@@ -2,8 +2,8 @@
   "format": "oops-v12-gpu-profile-1.0",
   "dynamic_scenarios": {
     "episodes": 50,
-    "wall_time_s": 0.13606285000423668,
-    "episodes_per_second": 367.4772356924988,
+    "wall_time_s": 0.16680251799698453,
+    "episodes_per_second": 299.75566676339923,
     "mean_steps": 9.18,
     "success_rate": 0.94,
     "program_id": "P002",

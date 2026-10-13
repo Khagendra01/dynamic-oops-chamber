@@ -1,0 +1,550 @@
+{
+  "format": "oops-v12-attribution-1.0",
+  "question": "Does deployment performance come from synthesis or from the hand-designed primitives it composes?",
+  "evaluated_levels": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "limit_per_level": null,
+  "seeds": 5,
+  "manual_programs": {
+    "manual_GOAL": [
+      "GOAL"
+    ],
+    "manual_GOAL_CHOOSE_AXIS": [
+      "GOAL",
+      "CHOOSE_AXIS"
+    ],
+    "manual_full_primitives": [
+      "CONTINUE",
+      "WAIT_GAP",
+      "GOAL",
+      "CHOOSE_AXIS"
+    ]
+  },
+  "c5_programs": [
+    {
+      "seed_index": 0,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ]
+    },
+    {
+      "seed_index": 1,
+      "program_id": "P001",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ]
+    },
+    {
+      "seed_index": 2,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ]
+    },
+    {
+      "seed_index": 3,
+      "program_id": "P001",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ]
+    },
+    {
+      "seed_index": 4,
+      "program_id": "P002",
+      "rules": [
+        "GOAL",
+        "CHOOSE_AXIS"
+      ]
+    }
+  ],
+  "overall": [
+    {
+      "method": "C5",
+      "n": 5000,
+      "success_rate": 0.786,
+      "collision_rate": 0.152,
+      "mean_steps": 9.368,
+      "mean_steps_solved": 7.402035623409669,
+      "mean_interventions": 0.112,
+      "mean_path_length_m": 1.0880906893128863,
+      "mean_min_clearance_m": 0.07091108618373458,
+      "mean_decision_latency_s": 0.00015440040058985335,
+      "deadline_misses": 0
+    },
+    {
+      "method": "manual_GOAL",
+      "n": 5000,
+      "success_rate": 0.628,
+      "collision_rate": 0.24,
+      "mean_steps": 11.45,
+      "mean_steps_solved": 7.13375796178344,
+      "mean_interventions": 0.218,
+      "mean_path_length_m": 0.6161129269975458,
+      "mean_min_clearance_m": 0.06999550214507595,
+      "mean_decision_latency_s": 5.0140189444315816e-05,
+      "deadline_misses": 0
+    },
+    {
+      "method": "manual_GOAL_CHOOSE_AXIS",
+      "n": 5000,
+      "success_rate": 0.786,
+      "collision_rate": 0.152,
+      "mean_steps": 9.368,
+      "mean_steps_solved": 7.402035623409669,
+      "mean_interventions": 0.112,
+      "mean_path_length_m": 1.0880906893129005,
+      "mean_min_clearance_m": 0.07091108618373348,
+      "mean_decision_latency_s": 0.00015629537300985955,
+      "deadline_misses": 0
+    },
+    {
+      "method": "manual_full_primitives",
+      "n": 5000,
+      "success_rate": 0.778,
+      "collision_rate": 0.16,
+      "mean_steps": 9.667,
+      "mean_steps_solved": 7.736503856041131,
+      "mean_interventions": 0.123,
+      "mean_path_length_m": 1.1073285307443548,
+      "mean_min_clearance_m": 0.07014965699849285,
+      "mean_decision_latency_s": 0.00016391786938376812,
+      "deadline_misses": 0
+    }
+  ],
+  "by_level": {
+    "C5": [
+      {
+        "level": 1,
+        "n": 1000,
+        "success_rate": 0.84,
+        "collision_rate": 0.0,
+        "mean_steps": 13.145,
+        "mean_steps_solved": 7.0773809523809526,
+        "mean_interventions": 0.0,
+        "mean_path_length_m": 1.5633167040473424,
+        "mean_min_clearance_m": 0.10498821026720435,
+        "mean_decision_latency_s": 0.00014278313809543285,
+        "deadline_misses": 0
+      },
+      {
+        "level": 2,
+        "n": 1000,
+        "success_rate": 0.98,
+        "collision_rate": 0.02,
+        "mean_steps": 7.425,
+        "mean_steps_solved": 7.4438775510204085,
+        "mean_interventions": 0.02,
+        "mean_path_length_m": 0.8533870759833614,
+        "mean_min_clearance_m": 0.07415153231579083,
+        "mean_decision_latency_s": 7.647732176880018e-05,
+        "deadline_misses": 0
+      },
+      {
+        "level": 3,
+        "n": 1000,
+        "success_rate": 0.97,
+        "collision_rate": 0.03,
+        "mean_steps": 7.375,
+        "mean_steps_solved": 7.469072164948454,
+        "mean_interventions": 0.005,
+        "mean_path_length_m": 0.8505926794918961,
+        "mean_min_clearance_m": 0.0921448223627087,
+        "mean_decision_latency_s": 7.402385903606603e-05,
+        "deadline_misses": 0
+      },
+      {
+        "level": 4,
+        "n": 1000,
+        "success_rate": 0.91,
+        "collision_rate": 0.025,
+        "mean_steps": 9.685,
+        "mean_steps_solved": 7.252747252747253,
+        "mean_interventions": 0.01,
+        "mean_path_length_m": 1.134139673154834,
+        "mean_min_clearance_m": 0.08887003706705636,
+        "mean_decision_latency_s": 9.984478717143355e-05,
+        "deadline_misses": 0
+      },
+      {
+        "level": 5,
+        "n": 1000,
+        "success_rate": 0.23,
+        "collision_rate": 0.685,
+        "mean_steps": 9.21,
+        "mean_steps_solved": 8.717391304347826,
+        "mean_interventions": 0.525,
+        "mean_path_length_m": 1.0390173138868395,
+        "mean_min_clearance_m": -0.005599171094085667,
+        "mean_decision_latency_s": 0.00037887289687753414,
+        "deadline_misses": 0
+      }
+    ],
+    "manual_GOAL": [
+      {
+        "level": 1,
+        "n": 1000,
+        "success_rate": 0.595,
+        "collision_rate": 0.0,
+        "mean_steps": 22.085,
+        "mean_steps_solved": 6.487394957983193,
+        "mean_interventions": 0.0,
+        "mean_path_length_m": 0.6523373794307102,
+        "mean_min_clearance_m": 0.11239651598504152,
+        "mean_decision_latency_s": 4.21254106996846e-05,
+        "deadline_misses": 0
+      },
+      {
+        "level": 2,
+        "n": 1000,
+        "success_rate": 0.85,
+        "collision_rate": 0.15,
+        "mean_steps": 7.06,
+        "mean_steps_solved": 7.3882352941176475,
+        "mean_interventions": 0.15,
+        "mean_path_length_m": 0.7255999999999942,
+        "mean_min_clearance_m": 0.06880039491785435,
+        "mean_decision_latency_s": 4.677505765872197e-05,
+        "deadline_misses": 0
+      },
+      {
+        "level": 3,
+        "n": 1000,
+        "success_rate": 0.825,
+        "collision_rate": 0.14,
+        "mean_steps": 8.155,
+        "mean_steps_solved": 7.303030303030303,
+        "mean_interventions": 0.125,
+        "mean_path_length_m": 0.7115999999999957,
+        "mean_min_clearance_m": 0.08869391581607185,
+        "mean_decision_latency_s": 4.581622958957187e-05,
+        "deadline_misses": 0
+      },
+      {
+        "level": 4,
+        "n": 1000,
+        "success_rate": 0.765,
+        "collision_rate": 0.105,
+        "mean_steps": 11.94,
+        "mean_steps_solved": 7.130718954248366,
+        "mean_interventions": 0.105,
+        "mean_path_length_m": 0.7116525908154718,
+        "mean_min_clearance_m": 0.08844304868312833,
+        "mean_decision_latency_s": 4.480796964710861e-05,
+        "deadline_misses": 0
+      },
+      {
+        "level": 5,
+        "n": 1000,
+        "success_rate": 0.105,
+        "collision_rate": 0.805,
+        "mean_steps": 8.01,
+        "mean_steps_solved": 7.428571428571429,
+        "mean_interventions": 0.71,
+        "mean_path_length_m": 0.27937466474159817,
+        "mean_min_clearance_m": -0.008356364676709556,
+        "mean_decision_latency_s": 7.11762796264921e-05,
+        "deadline_misses": 0
+      }
+    ],
+    "manual_GOAL_CHOOSE_AXIS": [
+      {
+        "level": 1,
+        "n": 1000,
+        "success_rate": 0.84,
+        "collision_rate": 0.0,
+        "mean_steps": 13.145,
+        "mean_steps_solved": 7.0773809523809526,
+        "mean_interventions": 0.0,
+        "mean_path_length_m": 1.563316704047351,
+        "mean_min_clearance_m": 0.10498821026720423,
+        "mean_decision_latency_s": 0.00014306304682748988,
+        "deadline_misses": 0
+      },
+      {
+        "level": 2,
+        "n": 1000,
+        "success_rate": 0.98,
+        "collision_rate": 0.02,
+        "mean_steps": 7.425,
+        "mean_steps_solved": 7.4438775510204085,
+        "mean_interventions": 0.02,
+        "mean_path_length_m": 0.8533870759833595,
+        "mean_min_clearance_m": 0.07415153231579069,
+        "mean_decision_latency_s": 7.901714779494736e-05,
+        "deadline_misses": 0
+      },
+      {
+        "level": 3,
+        "n": 1000,
+        "success_rate": 0.97,
+        "collision_rate": 0.03,
+        "mean_steps": 7.375,
+        "mean_steps_solved": 7.469072164948454,
+        "mean_interventions": 0.005,
+        "mean_path_length_m": 0.850592679491897,
+        "mean_min_clearance_m": 0.09214482236270884,
+        "mean_decision_latency_s": 7.458881540355681e-05,
+        "deadline_misses": 0
+      },
+      {
+        "level": 4,
+        "n": 1000,
+        "success_rate": 0.91,
+        "collision_rate": 0.025,
+        "mean_steps": 9.685,
+        "mean_steps_solved": 7.252747252747253,
+        "mean_interventions": 0.01,
+        "mean_path_length_m": 1.1341396731548352,
+        "mean_min_clearance_m": 0.0888700370670564,
+        "mean_decision_latency_s": 0.00010374005158522517,
+        "deadline_misses": 0
+      },
+      {
+        "level": 5,
+        "n": 1000,
+        "success_rate": 0.23,
+        "collision_rate": 0.685,
+        "mean_steps": 9.21,
+        "mean_steps_solved": 8.717391304347826,
+        "mean_interventions": 0.525,
+        "mean_path_length_m": 1.039017313886837,
+        "mean_min_clearance_m": -0.005599171094085678,
+        "mean_decision_latency_s": 0.00038106780343807677,
+        "deadline_misses": 0
+      }
+    ],
+    "manual_full_primitives": [
+      {
+        "level": 1,
+        "n": 1000,
+        "success_rate": 0.84,
+        "collision_rate": 0.0,
+        "mean_steps": 13.595,
+        "mean_steps_solved": 7.613095238095238,
+        "mean_interventions": 0.0,
+        "mean_path_length_m": 1.6233920881987949,
+        "mean_min_clearance_m": 0.10476734778772999,
+        "mean_decision_latency_s": 0.0001464332916846016,
+        "deadline_misses": 0
+      },
+      {
+        "level": 2,
+        "n": 1000,
+        "success_rate": 0.98,
+        "collision_rate": 0.02,
+        "mean_steps": 7.745,
+        "mean_steps_solved": 7.785714285714286,
+        "mean_interventions": 0.02,
+        "mean_path_length_m": 0.8828215660683437,
+        "mean_min_clearance_m": 0.07448395949322537,
+        "mean_decision_latency_s": 8.928259390395994e-05,
+        "deadline_misses": 0
+      },
+      {
+        "level": 3,
+        "n": 1000,
+        "success_rate": 0.96,
+        "collision_rate": 0.04,
+        "mean_steps": 7.495,
+        "mean_steps_solved": 7.635416666666667,
+        "mean_interventions": 0.005,
+        "mean_path_length_m": 0.8614796821812181,
+        "mean_min_clearance_m": 0.0912495890411645,
+        "mean_decision_latency_s": 8.107354773008842e-05,
+        "deadline_misses": 0
+      },
+      {
+        "level": 4,
+        "n": 1000,
+        "success_rate": 0.91,
+        "collision_rate": 0.025,
+        "mean_steps": 10.005,
+        "mean_steps_solved": 7.604395604395604,
+        "mean_interventions": 0.015,
+        "mean_path_length_m": 1.1729292696664353,
+        "mean_min_clearance_m": 0.08838325328159032,
+        "mean_decision_latency_s": 0.00011298761161805566,
+        "deadline_misses": 0
+      },
+      {
+        "level": 5,
+        "n": 1000,
+        "success_rate": 0.2,
+        "collision_rate": 0.715,
+        "mean_steps": 9.495,
+        "mean_steps_solved": 9.1,
+        "mean_interventions": 0.575,
+        "mean_path_length_m": 0.9960200476068537,
+        "mean_min_clearance_m": -0.008135864611237172,
+        "mean_decision_latency_s": 0.00038981230198212953,
+        "deadline_misses": 0
+      }
+    ]
+  },
+  "contrasts": {
+    "C5_vs_manual_GOAL": {
+      "success_clustered": {
+        "mean": 0.158,
+        "ci_low": 0.135,
+        "ci_high": 0.182,
+        "n": 1000,
+        "n_samples": 10000,
+        "seed": 20261013,
+        "alpha": 0.05,
+        "unit": "scene",
+        "n_scenes": 1000,
+        "n_paired_rows": 5000,
+        "left_rate": 0.786,
+        "right_rate": 0.628
+      },
+      "per_seed": {
+        "per_seed": {
+          "0": {
+            "mean": 0.158,
+            "n": 1000
+          },
+          "1": {
+            "mean": 0.158,
+            "n": 1000
+          },
+          "2": {
+            "mean": 0.158,
+            "n": 1000
+          },
+          "3": {
+            "mean": 0.158,
+            "n": 1000
+          },
+          "4": {
+            "mean": 0.158,
+            "n": 1000
+          }
+        },
+        "pooled_mean": 0.158,
+        "seed_spread": 0.0,
+        "seed_t_ci": {
+          "mean": 0.158,
+          "ci_low": 0.158,
+          "ci_high": 0.158,
+          "df": 4,
+          "sem": 0.0
+        },
+        "n": 5000
+      },
+      "note": "positive favours C5 (discovered program)"
+    },
+    "C5_vs_manual_GOAL_CHOOSE_AXIS": {
+      "success_clustered": {
+        "mean": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "n": 1000,
+        "n_samples": 10000,
+        "seed": 20261013,
+        "alpha": 0.05,
+        "unit": "scene",
+        "n_scenes": 1000,
+        "n_paired_rows": 5000,
+        "left_rate": 0.786,
+        "right_rate": 0.786
+      },
+      "per_seed": {
+        "per_seed": {
+          "0": {
+            "mean": 0.0,
+            "n": 1000
+          },
+          "1": {
+            "mean": 0.0,
+            "n": 1000
+          },
+          "2": {
+            "mean": 0.0,
+            "n": 1000
+          },
+          "3": {
+            "mean": 0.0,
+            "n": 1000
+          },
+          "4": {
+            "mean": 0.0,
+            "n": 1000
+          }
+        },
+        "pooled_mean": 0.0,
+        "seed_spread": 0.0,
+        "seed_t_ci": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "df": 4,
+          "sem": 0.0
+        },
+        "n": 5000
+      },
+      "note": "positive favours C5 (discovered program)"
+    },
+    "C5_vs_manual_full_primitives": {
+      "success_clustered": {
+        "mean": 0.008,
+        "ci_low": 0.0,
+        "ci_high": 0.016,
+        "n": 1000,
+        "n_samples": 10000,
+        "seed": 20261013,
+        "alpha": 0.05,
+        "unit": "scene",
+        "n_scenes": 1000,
+        "n_paired_rows": 5000,
+        "left_rate": 0.786,
+        "right_rate": 0.778
+      },
+      "per_seed": {
+        "per_seed": {
+          "0": {
+            "mean": 0.008,
+            "n": 1000
+          },
+          "1": {
+            "mean": 0.008,
+            "n": 1000
+          },
+          "2": {
+            "mean": 0.008,
+            "n": 1000
+          },
+          "3": {
+            "mean": 0.008,
+            "n": 1000
+          },
+          "4": {
+            "mean": 0.008,
+            "n": 1000
+          }
+        },
+        "pooled_mean": 0.008,
+        "seed_spread": 0.0,
+        "seed_t_ci": {
+          "mean": 0.008,
+          "ci_low": 0.008,
+          "ci_high": 0.008,
+          "df": 4,
+          "sem": 0.0
+        },
+        "n": 5000
+      },
+      "note": "positive favours C5 (discovered program)"
+    }
+  },
+  "n_rows": 20000
+}

@@ -146,5 +146,66 @@ class TestScheduledMotion(unittest.TestCase):
         self.assertEqual(_drive(build(), commands), _drive(build(), commands))
 
 
+class TestCausalShield(unittest.TestCase):
+    """v1.2.1: execution is filtered by served observations, not ground truth.
+
+    Ground truth remains only as a post-hoc collision *detector*.  These tests
+    pin the exact audit finding: v1.2's oracle shield knew about future
+    obstacle appearances before any causal observer could.
+    """
+
+    @staticmethod
+    def _hazard_env(**kwargs):
+        defaults = dict(chamber_size=(1.0, 1.0, 1.0),
+                        start=(0.1, 0.5, 0.5), goal=(0.9, 0.5, 0.5),
+                        obstacles=[DynamicBox("hazard", (0.5, 0.5, 0.5),
+                                              (0.1, 0.1, 0.1))],
+                        radius=0.035, dt=0.5, max_speed=0.7,
+                        goal_tolerance=0.055, max_steps=10)
+        defaults.update(kwargs)
+        return DynamicChamber(**defaults)
+
+    def test_static_hazard_blocked_by_perfect_obs_shield(self):
+        env = self._hazard_env()
+        env.reset()
+        result = env.step((0.7, 0.0, 0.0))
+        self.assertTrue(result.safety_intervention)
+        self.assertFalse(result.collision)
+        self.assertEqual(result.observation.position, env.start)
+
+    def test_future_appearance_not_known_to_causal_shield(self):
+        """The v1.2 oracle blocked this move; the causal shield must allow it
+        (the hazard is invisible before ``appear_at``) and the post-hoc
+        ground-truth detector must then report the collision."""
+        env = self._hazard_env(obstacles=[DynamicBox(
+            "late", (0.5, 0.5, 0.5), (0.1, 0.1, 0.1), velocity=(0.0, 0.0, 0.0),
+            appear_at=0.6)])
+        env.reset()
+        first = env.step((0.7, 0.0, 0.0))   # t 0.0 -> 0.5, hazard still hidden
+        self.assertFalse(first.safety_intervention)
+        self.assertFalse(first.collision)
+        self.assertAlmostEqual(first.observation.position[0], 0.45)
+        second = env.step((0.7, 0.0, 0.0))  # t 0.5 -> 1.0, hazard active at 0.6
+        self.assertFalse(second.safety_intervention)  # causal: cannot know
+        self.assertTrue(second.collision)             # detector: ground truth
+    def test_shield_follows_degraded_observer(self):
+        from experiments_v12.dynamic_observations import (CausalObserver,
+                                                          ObservationConfig)
+        env = self._hazard_env()
+        env.reset()
+        # Perfect-observation shield (default) blocks the hazard...
+        blocked = env.step((0.7, 0.0, 0.0))
+        self.assertTrue(blocked.safety_intervention)
+        # ...but a shield fed the policy's degraded view (hazard beyond the
+        # visibility range) approves the same command; truth then collides.
+        env = self._hazard_env()
+        env.reset()
+        env.shield_observer = CausalObserver(
+            ObservationConfig(visibility_range=0.3), episode_seed=1)
+        allowed = env.step((0.7, 0.0, 0.0))
+        self.assertFalse(allowed.safety_intervention)
+        self.assertTrue(allowed.collision)
+
+
 if __name__ == "__main__":
     unittest.main()

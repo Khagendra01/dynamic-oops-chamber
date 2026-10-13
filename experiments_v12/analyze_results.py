@@ -12,7 +12,12 @@ Two refinements the raw summaries do not include:
   Solving those is impossible for any method, so overall rates understate
   capability; both numbers are reported.
 * **paired contrasts recomputed from raw rows**, so every comparison in the
-  report is reproducible from the saved episode files.
+  report is reproducible from the saved episode files.  v1.2.1 adds
+  **scene-clustered bootstrap CIs** (rows that share a scene are correlated
+  across training seeds; the resampling unit is the unique scene) and
+  **per-training-seed contrast means**, so a contrast driven by one seed is
+  visible instead of averaged away.  The row-level interval is retained only
+  for provenance.
 """
 from __future__ import annotations
 
@@ -22,8 +27,11 @@ import json
 from pathlib import Path
 
 from experiments_v12._common import RESULTS_ROOT, save_json
-from experiments_v12.statistics import (paired_rate_comparison,
-                                        paired_comparison, wilson_interval)
+from experiments_v12.statistics import (clustered_paired_rate,
+                                        paired_comparison,
+                                        paired_rate_comparison,
+                                        per_seed_contrasts,
+                                        wilson_interval)
 
 TRUE = {"1", "true", "True", "TRUE"}
 
@@ -110,6 +118,13 @@ def paired(rows_a: list[dict], rows_b: list[dict]) -> dict | None:
         return None
     return {
         "n_pairs": len(pairs),
+        # v1.2.1: scene-clustered CI is the authoritative interval (rows that
+        # share a scene are correlated across training seeds).
+        "success_clustered": clustered_paired_rate(
+            [a for a, _ in pairs], [b for _, b in pairs]),
+        "per_seed": per_seed_contrasts(
+            [a for a, _ in pairs], [b for _, b in pairs]),
+        # Row-level interval kept for provenance only.
         "success": paired_rate_comparison(
             [int(bool(a["success"])) for a, _ in pairs],
             [int(bool(b["success"])) for _, b in pairs]),
@@ -220,23 +235,35 @@ def render_markdown(analysis: dict) -> str:
         parts.append(md_table(abl["overall_feasible"],
                               ["method", "n", "success", "ci_low", "ci_high",
                                "collision_rate"]))
-        parts.append("Paired contrasts (positive favours the left method):\n")
+        parts.append("Paired contrasts (positive favours the left method; "
+                     "scene-clustered CI; seed-level t-CI over training "
+                     "seeds):\n")
         contrast_rows = []
         for name, value in abl["contrasts"].items():
             if not value:
                 continue
+            clustered = value["success_clustered"]
+            seeds = value["per_seed"]["per_seed"]
+            tci = value["per_seed"].get("seed_t_ci") or {}
             contrast_rows.append({
-                "contrast": name, "n_pairs": value["n_pairs"],
-                "d_success": value["success"]["mean"],
-                "ci_low": value["success"]["ci_low"],
-                "ci_high": value["success"]["ci_high"],
+                "contrast": name,
+                "n_scenes": clustered["n_scenes"],
+                "d_success": clustered["mean"],
+                "ci_low": clustered["ci_low"],
+                "ci_high": clustered["ci_high"],
+                "seed_t_ci": (f"{tci.get('mean', 0):+.3f} "
+                              f"[{tci.get('ci_low', 0):+.3f}, "
+                              f"{tci.get('ci_high', 0):+.3f}]"
+                              if tci else "n/a"),
+                "per_seed_means": "; ".join(
+                    f"s{si}: {m['mean']:+.3f}" for si, m in seeds.items()),
                 "left_only": value["success"]["left_only"],
                 "right_only": value["success"]["right_only"],
-                "d_steps": value["steps"]["mean"],
             })
         parts.append(md_table(contrast_rows,
-                              ["contrast", "n_pairs", "d_success", "ci_low",
-                               "ci_high", "left_only", "right_only", "d_steps"]))
+                              ["contrast", "n_scenes", "d_success", "ci_low",
+                               "ci_high", "seed_t_ci", "per_seed_means",
+                               "left_only", "right_only"]))
 
     if "generalization" in analysis:
         gen = analysis["generalization"]
@@ -256,22 +283,30 @@ def render_markdown(analysis: dict) -> str:
         parts.append(md_table(base["overall_feasible"],
                               ["method", "n", "success", "ci_low", "ci_high",
                                "collision_rate"]))
-        parts.append("Paired C5-versus-planner contrasts:\n")
+        parts.append("Paired C5-versus-planner contrasts (scene-clustered CI; "
+                     "seed-level t-CI):\n")
         rows = []
         for name, value in base["contrasts"].items():
             if not value:
                 continue
+            clustered = value["success_clustered"]
+            tci = value["per_seed"].get("seed_t_ci") or {}
             rows.append({
-                "contrast": name, "n_pairs": value["n_pairs"],
-                "d_success": value["success"]["mean"],
-                "ci_low": value["success"]["ci_low"],
-                "ci_high": value["success"]["ci_high"],
+                "contrast": name,
+                "n_scenes": clustered["n_scenes"],
+                "d_success": clustered["mean"],
+                "ci_low": clustered["ci_low"],
+                "ci_high": clustered["ci_high"],
+                "seed_t_ci": (f"{tci.get('mean', 0):+.3f} "
+                              f"[{tci.get('ci_low', 0):+.3f}, "
+                              f"{tci.get('ci_high', 0):+.3f}]"
+                              if tci else "n/a"),
                 "left_only": value["success"]["left_only"],
                 "right_only": value["success"]["right_only"],
             })
-        parts.append(md_table(rows, ["contrast", "n_pairs", "d_success",
-                                     "ci_low", "ci_high", "left_only",
-                                     "right_only"]))
+        parts.append(md_table(rows, ["contrast", "n_scenes", "d_success",
+                                     "ci_low", "ci_high", "seed_t_ci",
+                                     "left_only", "right_only"]))
 
     if "reactive" in analysis:
         parts.append("\n## Experiment E: degraded observations\n")

@@ -6,15 +6,26 @@ degradation model:
 
 * ``position_noise``   additive Gaussian noise on the reported agent position
 * ``velocity_noise``   additive Gaussian noise on reported obstacle velocities
-* ``delay_steps``      observations are ``k`` control periods old
+* ``delay_steps``      *exteroception* is ``k`` control periods old
 * ``serve_every``      observations are only refreshed every ``k`` steps
 * ``visibility_range`` obstacles farther than this from the agent are hidden
+
+v1.2.1 semantics — proprioception vs exteroception
+-------------------------------------------------
+Delay applies to **exteroception only** (obstacle states and the observation
+timestamp used for motion prediction).  The agent's own pose and goal are
+**current proprioception**: a real robot always knows where it is now, but
+perceives obstacles with latency.  The served observation therefore pairs a
+current ``position``/``goal`` with obstacle snapshots and ``time_s`` taken
+``delay_steps`` periods in the past.  (v1.2 accidentally produced this split
+via a state-mutation hack while *labelling* the whole observation as delayed;
+v1.2.1 makes the split explicit, removes the hack, and tests it.)
 
 Causality contract (asserted by ``tests/test_observations.py``):
 
 * the observer only ever reads simulator state at time ``t <= now``;
-* a delayed/stale observation reports its own (older) ``time_s`` and
-  ``step_index`` so the observation age is visible to the planner;
+* a delayed observation reports its own (older) ``time_s``/``step_index``
+  for obstacles while ``position``/``goal`` remain current;
 * noise is a pure function of ``(episode_seed, step, channel)``, so replaying a
   scenario with the same seed reproduces the same observation sequence.
 
@@ -75,51 +86,45 @@ class CausalObserver:
         rng = random.Random(self.episode_seed * 1_000_003 + step * 97 + channel)
         return rng.gauss(0.0, sigma)
 
-    def _truth_at(self, env, step: int) -> Observation:
-        """Ground truth at ``step``; ``step`` is never greater than the now."""
-        if step == env.step_index:
-            return env.observe()
-        saved = env.step_index
-        try:
-            env.step_index = step
-            return env.observe()
-        finally:
-            env.step_index = saved
-
     def observe(self, env) -> Observation:
         now = env.step_index
         cfg = self.config
         if cfg.serve_every > 1 and now % cfg.serve_every != 0 and self.last is not None:
             return self.last
         step = max(0, now - max(0, cfg.delay_steps))
-        truth = self._truth_at(env, step)
+        t_old = round(step * env.dt, 10)
 
-        position = truth.position
-        if cfg.position_noise > 0.0:
-            position = vec(tuple(
-                min(max(position[i] + self._noise(step, i, cfg.position_noise),
-                        env.radius),
-                    env.chamber_size[i] - env.radius)
-                for i in range(3)))
-
+        # Exteroception: obstacle states as last seen at t_old (never future).
         obstacles = []
-        for item in truth.obstacles:
-            center = item.center
-            velocity = item.velocity
-            channel = 100 + (sum(ord(c) for c in item.name) % 89)
+        for ob in env.obstacles:
+            if not ob.active_at(t_old):
+                continue
+            center = ob.center_at(t_old, env.chamber_size)
+            velocity = ob.velocity_at(t_old, env.chamber_size)
+            channel = 100 + (sum(ord(c) for c in ob.name) % 89)
             if cfg.velocity_noise > 0.0:
                 velocity = vec(tuple(
                     velocity[i] + self._noise(step, channel + i, cfg.velocity_noise)
                     for i in range(3)))
             if cfg.visibility_range < math.inf:
-                if norm(sub(center, position)) > cfg.visibility_range:
+                if norm(sub(center, env.position)) > cfg.visibility_range:
                     continue
-            obstacles.append(ObstacleObservation(item.name, center, item.size,
+            obstacles.append(ObstacleObservation(ob.name, center, ob.size,
                                                  velocity))
-        served = Observation(time_s=truth.time_s, step_index=truth.step_index,
-                             position=position, goal=truth.goal,
+
+        # Proprioception: current pose and goal (never delayed).
+        position = env.position
+        if cfg.position_noise > 0.0:
+            position = vec(tuple(
+                min(max(position[i] + self._noise(now, i, cfg.position_noise),
+                        env.radius),
+                    env.chamber_size[i] - env.radius)
+                for i in range(3)))
+
+        served = Observation(time_s=t_old, step_index=step,
+                             position=position, goal=env.goal,
                              obstacles=tuple(obstacles),
-                             chamber_size=truth.chamber_size)
+                             chamber_size=env.chamber_size)
         self.last = served
         return served
 

@@ -68,6 +68,31 @@ class DelayTests(unittest.TestCase):
         self.assertAlmostEqual(served.time_s, env.time_s - 2 * env.dt)
         self.assertAlmostEqual(served.position[0], env.start[0] + 0.1)
 
+    def test_v121_proprioception_current_exteroception_delayed(self):
+        """v1.2.1 contract: pose is current, obstacles are last-seen."""
+        env = gate_env()
+        observer = CausalObserver(ObservationConfig(delay_steps=2),
+                                  episode_seed=1)
+        env.reset()
+        env.step((0.1, 0.0, 0.0))
+        env.step((0.1, 0.0, 0.0))
+        step_before = env.step_index
+        served = observer.observe(env)
+        # The observer must not mutate simulator state (v1.2 hack removed).
+        self.assertEqual(env.step_index, step_before)
+        # Proprioception is current.
+        self.assertEqual(served.position, env.position)
+        self.assertEqual(served.goal, env.goal)
+        # Exteroception is delayed: obstacles match truth at the old time,
+        # which differs from current truth once the gate has moved.
+        saved = env.step_index
+        env.step_index = served.step_index
+        past = env.observe()
+        env.step_index = saved
+        self.assertEqual(served.obstacles, past.obstacles)
+        current = env.observe()
+        self.assertNotEqual(served.obstacles, current.obstacles)
+
     def test_clamped_at_episode_start(self):
         env = gate_env()
         observer = CausalObserver(ObservationConfig(delay_steps=5))

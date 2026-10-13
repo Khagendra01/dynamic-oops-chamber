@@ -5,80 +5,80 @@
       {
         "method": "C1",
         "n": 5000,
-        "success": 0.632,
-        "ci_low": 0.6185358053477625,
-        "ci_high": 0.6452615138959161,
-        "collision_rate": 0.236,
+        "success": 0.628,
+        "ci_low": 0.6145090571458138,
+        "ci_high": 0.6412944039389656,
+        "collision_rate": 0.24,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "C2",
         "n": 5000,
-        "success": 0.763,
-        "ci_low": 0.7510137678429121,
-        "ci_high": 0.7745824061047206,
-        "collision_rate": 0.1628,
+        "success": 0.7572,
+        "ci_low": 0.7451204203134256,
+        "ci_high": 0.7688846593038028,
+        "collision_rate": 0.169,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "C3",
         "n": 5000,
-        "success": 0.792,
-        "ci_low": 0.780527576387093,
-        "ci_high": 0.80302406921256,
-        "collision_rate": 0.146,
+        "success": 0.786,
+        "ci_low": 0.7744145376007392,
+        "ci_high": 0.7971463207605647,
+        "collision_rate": 0.152,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "C4",
         "n": 5000,
-        "success": 0.794,
-        "ci_low": 0.7825660779184023,
-        "ci_high": 0.8049824967607004,
-        "collision_rate": 0.144,
+        "success": 0.788,
+        "ci_low": 0.7764518105190151,
+        "ci_high": 0.7991059769217385,
+        "collision_rate": 0.15,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "C5",
         "n": 5000,
-        "success": 0.792,
-        "ci_low": 0.780527576387093,
-        "ci_high": 0.80302406921256,
-        "collision_rate": 0.146,
+        "success": 0.786,
+        "ci_low": 0.7744145376007392,
+        "ci_high": 0.7971463207605647,
+        "collision_rate": 0.152,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "F001",
         "n": 5000,
-        "success": 0.632,
-        "ci_low": 0.6185358053477625,
-        "ci_high": 0.6452615138959161,
-        "collision_rate": 0.236,
+        "success": 0.628,
+        "ci_low": 0.6145090571458138,
+        "ci_high": 0.6412944039389656,
+        "collision_rate": 0.24,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "F010",
         "n": 5000,
-        "success": 0.646,
-        "ci_low": 0.632637244902081,
-        "ci_high": 0.6591385778977454,
-        "collision_rate": 0.1712,
+        "success": 0.6412,
+        "ci_low": 0.6278010843940947,
+        "ci_high": 0.6543821086150525,
+        "collision_rate": 0.1766,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "F100",
         "n": 5000,
-        "success": 0.794,
-        "ci_low": 0.7825660779184023,
-        "ci_high": 0.8049824967607004,
-        "collision_rate": 0.144,
+        "success": 0.788,
+        "ci_low": 0.7764518105190151,
+        "ci_high": 0.7991059769217385,
+        "collision_rate": 0.15,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       }
@@ -87,80 +87,80 @@
       {
         "method": "C1",
         "n": 4680,
-        "success": 0.6752136752136753,
-        "ci_low": 0.6616577878578727,
-        "ci_high": 0.688482148556715,
-        "collision_rate": 0.24893162393162394,
+        "success": 0.6709401709401709,
+        "ci_low": 0.657342670859373,
+        "ci_high": 0.684257267106078,
+        "collision_rate": 0.2532051282051282,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "C2",
         "n": 4680,
-        "success": 0.8151709401709402,
-        "ci_low": 0.8037930305986528,
-        "ci_high": 0.8260318550251479,
-        "collision_rate": 0.17072649572649573,
+        "success": 0.808974358974359,
+        "ci_low": 0.7974599123228178,
+        "ci_high": 0.8199819755497354,
+        "collision_rate": 0.17735042735042736,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "C3",
         "n": 4680,
-        "success": 0.8461538461538461,
-        "ci_low": 0.8355331201133114,
-        "ci_high": 0.8562067542667273,
-        "collision_rate": 0.1527777777777778,
+        "success": 0.8397435897435898,
+        "ci_low": 0.8289552768128535,
+        "ci_high": 0.8499745998934808,
+        "collision_rate": 0.15918803418803418,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "C4",
         "n": 4680,
-        "success": 0.8482905982905983,
-        "ci_low": 0.8377271085013989,
-        "ci_high": 0.8582827651032079,
-        "collision_rate": 0.15064102564102563,
+        "success": 0.8418803418803419,
+        "ci_low": 0.8311472156964985,
+        "ci_high": 0.8520526602344038,
+        "collision_rate": 0.15705128205128205,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "C5",
         "n": 4680,
-        "success": 0.8461538461538461,
-        "ci_low": 0.8355331201133114,
-        "ci_high": 0.8562067542667273,
-        "collision_rate": 0.1527777777777778,
+        "success": 0.8397435897435898,
+        "ci_low": 0.8289552768128535,
+        "ci_high": 0.8499745998934808,
+        "collision_rate": 0.15918803418803418,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "F001",
         "n": 4680,
-        "success": 0.6752136752136753,
-        "ci_low": 0.6616577878578727,
-        "ci_high": 0.688482148556715,
-        "collision_rate": 0.24893162393162394,
+        "success": 0.6709401709401709,
+        "ci_low": 0.657342670859373,
+        "ci_high": 0.684257267106078,
+        "collision_rate": 0.2532051282051282,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "F010",
         "n": 4680,
-        "success": 0.6901709401709402,
-        "ci_low": 0.6767708030142588,
-        "ci_high": 0.7032591279723056,
-        "collision_rate": 0.1797008547008547,
+        "success": 0.685042735042735,
+        "ci_low": 0.6715874061433287,
+        "ci_high": 0.6981945267042724,
+        "collision_rate": 0.18547008547008548,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
       {
         "method": "F100",
         "n": 4680,
-        "success": 0.8482905982905983,
-        "ci_low": 0.8377271085013989,
-        "ci_high": 0.8582827651032079,
-        "collision_rate": 0.15064102564102563,
+        "success": 0.8418803418803419,
+        "ci_low": 0.8311472156964985,
+        "ci_high": 0.8520526602344038,
+        "collision_rate": 0.15705128205128205,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       }
@@ -186,10 +186,10 @@
         {
           "level": 3,
           "n_all": 1000,
-          "success_all": 0.84,
+          "success_all": 0.825,
           "n_feasible": 1000,
-          "success_feasible": 0.84,
-          "collision_rate": 0.125
+          "success_feasible": 0.825,
+          "collision_rate": 0.14
         },
         {
           "level": 4,
@@ -202,10 +202,10 @@
         {
           "level": 5,
           "n_all": 1000,
-          "success_all": 0.11,
+          "success_all": 0.105,
           "n_feasible": 900,
-          "success_feasible": 0.12222222222222222,
-          "collision_rate": 0.8
+          "success_feasible": 0.11666666666666667,
+          "collision_rate": 0.805
         }
       ],
       "C2": [
@@ -228,26 +228,26 @@
         {
           "level": 3,
           "n_all": 1000,
-          "success_all": 0.951,
+          "success_all": 0.94,
           "n_feasible": 1000,
-          "success_feasible": 0.951,
-          "collision_rate": 0.035
+          "success_feasible": 0.94,
+          "collision_rate": 0.048
         },
         {
           "level": 4,
           "n_all": 1000,
-          "success_all": 0.894,
+          "success_all": 0.888,
           "n_feasible": 940,
-          "success_feasible": 0.951063829787234,
-          "collision_rate": 0.032
+          "success_feasible": 0.9446808510638298,
+          "collision_rate": 0.038
         },
         {
           "level": 5,
           "n_all": 1000,
-          "success_all": 0.212,
+          "success_all": 0.2,
           "n_feasible": 900,
-          "success_feasible": 0.23555555555555555,
-          "collision_rate": 0.703
+          "success_feasible": 0.2222222222222222,
+          "collision_rate": 0.715
         }
       ],
       "C3": [
@@ -270,26 +270,26 @@
         {
           "level": 3,
           "n_all": 1000,
-          "success_all": 0.98,
+          "success_all": 0.97,
           "n_feasible": 1000,
-          "success_feasible": 0.98,
-          "collision_rate": 0.02
+          "success_feasible": 0.97,
+          "collision_rate": 0.03
         },
         {
           "level": 4,
           "n_all": 1000,
-          "success_all": 0.915,
+          "success_all": 0.91,
           "n_feasible": 940,
-          "success_feasible": 0.973404255319149,
-          "collision_rate": 0.02
+          "success_feasible": 0.9680851063829787,
+          "collision_rate": 0.025
         },
         {
           "level": 5,
           "n_all": 1000,
-          "success_all": 0.245,
+          "success_all": 0.23,
           "n_feasible": 900,
-          "success_feasible": 0.2722222222222222,
-          "collision_rate": 0.67
+          "success_feasible": 0.25555555555555554,
+          "collision_rate": 0.685
         }
       ],
       "C4": [
@@ -312,26 +312,26 @@
         {
           "level": 3,
           "n_all": 1000,
-          "success_all": 0.98,
+          "success_all": 0.97,
           "n_feasible": 1000,
-          "success_feasible": 0.98,
-          "collision_rate": 0.02
+          "success_feasible": 0.97,
+          "collision_rate": 0.03
         },
         {
           "level": 4,
           "n_all": 1000,
-          "success_all": 0.915,
+          "success_all": 0.91,
           "n_feasible": 940,
-          "success_feasible": 0.973404255319149,
-          "collision_rate": 0.02
+          "success_feasible": 0.9680851063829787,
+          "collision_rate": 0.025
         },
         {
           "level": 5,
           "n_all": 1000,
-          "success_all": 0.25,
+          "success_all": 0.235,
           "n_feasible": 900,
-          "success_feasible": 0.2777777777777778,
-          "collision_rate": 0.665
+          "success_feasible": 0.2611111111111111,
+          "collision_rate": 0.68
         }
       ],
       "C5": [
@@ -354,26 +354,26 @@
         {
           "level": 3,
           "n_all": 1000,
-          "success_all": 0.98,
+          "success_all": 0.97,
           "n_feasible": 1000,
-          "success_feasible": 0.98,
-          "collision_rate": 0.02
+          "success_feasible": 0.97,
+          "collision_rate": 0.03
         },
         {
           "level": 4,
           "n_all": 1000,
-          "success_all": 0.915,
+          "success_all": 0.91,
           "n_feasible": 940,
-          "success_feasible": 0.973404255319149,
-          "collision_rate": 0.02
+          "success_feasible": 0.9680851063829787,
+          "collision_rate": 0.025
         },
         {
           "level": 5,
           "n_all": 1000,
-          "success_all": 0.245,
+          "success_all": 0.23,
           "n_feasible": 900,
-          "success_feasible": 0.2722222222222222,
-          "collision_rate": 0.67
+          "success_feasible": 0.25555555555555554,
+          "collision_rate": 0.685
         }
       ],
       "F001": [
@@ -396,10 +396,10 @@
         {
           "level": 3,
           "n_all": 1000,
-          "success_all": 0.84,
+          "success_all": 0.825,
           "n_feasible": 1000,
-          "success_feasible": 0.84,
-          "collision_rate": 0.125
+          "success_feasible": 0.825,
+          "collision_rate": 0.14
         },
         {
           "level": 4,
@@ -412,10 +412,10 @@
         {
           "level": 5,
           "n_all": 1000,
-          "success_all": 0.11,
+          "success_all": 0.105,
           "n_feasible": 900,
-          "success_feasible": 0.12222222222222222,
-          "collision_rate": 0.8
+          "success_feasible": 0.11666666666666667,
+          "collision_rate": 0.805
         }
       ],
       "F010": [
@@ -438,26 +438,26 @@
         {
           "level": 3,
           "n_all": 1000,
-          "success_all": 0.785,
+          "success_all": 0.777,
           "n_feasible": 1000,
-          "success_feasible": 0.785,
-          "collision_rate": 0.054
+          "success_feasible": 0.777,
+          "collision_rate": 0.065
         },
         {
           "level": 4,
           "n_all": 1000,
-          "success_all": 0.745,
+          "success_all": 0.741,
           "n_feasible": 940,
-          "success_feasible": 0.7925531914893617,
-          "collision_rate": 0.046
+          "success_feasible": 0.7882978723404256,
+          "collision_rate": 0.05
         },
         {
           "level": 5,
           "n_all": 1000,
-          "success_all": 0.207,
+          "success_all": 0.195,
           "n_feasible": 900,
-          "success_feasible": 0.23,
-          "collision_rate": 0.706
+          "success_feasible": 0.21666666666666667,
+          "collision_rate": 0.718
         }
       ],
       "F100": [
@@ -480,78 +480,174 @@
         {
           "level": 3,
           "n_all": 1000,
-          "success_all": 0.98,
+          "success_all": 0.97,
           "n_feasible": 1000,
-          "success_feasible": 0.98,
-          "collision_rate": 0.02
+          "success_feasible": 0.97,
+          "collision_rate": 0.03
         },
         {
           "level": 4,
           "n_all": 1000,
-          "success_all": 0.915,
+          "success_all": 0.91,
           "n_feasible": 940,
-          "success_feasible": 0.973404255319149,
-          "collision_rate": 0.02
+          "success_feasible": 0.9680851063829787,
+          "collision_rate": 0.025
         },
         {
           "level": 5,
           "n_all": 1000,
-          "success_all": 0.25,
+          "success_all": 0.235,
           "n_feasible": 900,
-          "success_feasible": 0.2777777777777778,
-          "collision_rate": 0.665
+          "success_feasible": 0.2611111111111111,
+          "collision_rate": 0.68
         }
       ]
     },
     "contrasts": {
       "C5_vs_C2": {
         "n_pairs": 5000,
+        "success_clustered": {
+          "mean": 0.02879999999999993,
+          "ci_low": 0.023799999999999946,
+          "ci_high": 0.033599999999999935,
+          "n": 1000,
+          "n_samples": 10000,
+          "seed": 20261013,
+          "alpha": 0.05,
+          "unit": "scene",
+          "n_scenes": 1000,
+          "n_paired_rows": 5000,
+          "left_rate": 0.786,
+          "right_rate": 0.7572
+        },
+        "per_seed": {
+          "per_seed": {
+            "0": {
+              "mean": 0.0,
+              "n": 1000
+            },
+            "1": {
+              "mean": 0.0,
+              "n": 1000
+            },
+            "2": {
+              "mean": 0.144,
+              "n": 1000
+            },
+            "3": {
+              "mean": 0.0,
+              "n": 1000
+            },
+            "4": {
+              "mean": 0.0,
+              "n": 1000
+            }
+          },
+          "pooled_mean": 0.0288,
+          "seed_spread": 0.144,
+          "seed_t_ci": {
+            "mean": 0.0288,
+            "ci_low": -0.0511488,
+            "ci_high": 0.1087488,
+            "df": 4,
+            "sem": 0.028800000000000003
+          },
+          "n": 5000
+        },
         "success": {
-          "mean": 0.029,
-          "ci_low": 0.024,
+          "mean": 0.0288,
+          "ci_low": 0.0238,
           "ci_high": 0.034,
           "n": 5000,
           "n_samples": 10000,
           "seed": 20261013,
           "alpha": 0.05,
-          "left_rate": 0.792,
-          "right_rate": 0.763,
+          "left_rate": 0.786,
+          "right_rate": 0.7572,
           "left_wilson": {
-            "rate": 0.792,
-            "ci_low": 0.780527576387093,
-            "ci_high": 0.80302406921256,
+            "rate": 0.786,
+            "ci_low": 0.7744145376007392,
+            "ci_high": 0.7971463207605647,
             "n": 5000,
-            "successes": 3960
+            "successes": 3930
           },
           "right_wilson": {
-            "rate": 0.763,
-            "ci_low": 0.7510137678429121,
-            "ci_high": 0.7745824061047206,
+            "rate": 0.7572,
+            "ci_low": 0.7451204203134256,
+            "ci_high": 0.7688846593038028,
             "n": 5000,
-            "successes": 3815
+            "successes": 3786
           },
-          "left_only": 158,
-          "right_only": 13,
-          "both": 3802,
-          "neither": 1027
+          "left_only": 160,
+          "right_only": 16,
+          "both": 3770,
+          "neither": 1054
         },
         "steps": {
-          "mean": -0.98,
-          "ci_low": -1.1112,
-          "ci_high": -0.8572,
+          "mean": -0.9612,
+          "ci_low": -1.0906,
+          "ci_high": -0.8398,
           "n": 5000,
           "n_samples": 10000,
           "seed": 20261013,
           "alpha": 0.05,
-          "left_mean": 9.421,
-          "right_mean": 10.401,
-          "wins": 111,
-          "losses": 730,
-          "ties": 4159
+          "left_mean": 9.368,
+          "right_mean": 10.3292,
+          "wins": 113,
+          "losses": 727,
+          "ties": 4160
         }
       },
       "C5_vs_C3": {
         "n_pairs": 5000,
+        "success_clustered": {
+          "mean": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 1000,
+          "n_samples": 10000,
+          "seed": 20261013,
+          "alpha": 0.05,
+          "unit": "scene",
+          "n_scenes": 1000,
+          "n_paired_rows": 5000,
+          "left_rate": 0.786,
+          "right_rate": 0.786
+        },
+        "per_seed": {
+          "per_seed": {
+            "0": {
+              "mean": 0.0,
+              "n": 1000
+            },
+            "1": {
+              "mean": 0.0,
+              "n": 1000
+            },
+            "2": {
+              "mean": 0.0,
+              "n": 1000
+            },
+            "3": {
+              "mean": 0.0,
+              "n": 1000
+            },
+            "4": {
+              "mean": 0.0,
+              "n": 1000
+            }
+          },
+          "pooled_mean": 0.0,
+          "seed_spread": 0.0,
+          "seed_t_ci": {
+            "mean": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0,
+            "df": 4,
+            "sem": 0.0
+          },
+          "n": 5000
+        },
         "success": {
           "mean": 0.0,
           "ci_low": 0.0,
@@ -560,26 +656,26 @@
           "n_samples": 10000,
           "seed": 20261013,
           "alpha": 0.05,
-          "left_rate": 0.792,
-          "right_rate": 0.792,
+          "left_rate": 0.786,
+          "right_rate": 0.786,
           "left_wilson": {
-            "rate": 0.792,
-            "ci_low": 0.780527576387093,
-            "ci_high": 0.80302406921256,
+            "rate": 0.786,
+            "ci_low": 0.7744145376007392,
+            "ci_high": 0.7971463207605647,
             "n": 5000,
-            "successes": 3960
+            "successes": 3930
           },
           "right_wilson": {
-            "rate": 0.792,
-            "ci_low": 0.780527576387093,
-            "ci_high": 0.80302406921256,
+            "rate": 0.786,
+            "ci_low": 0.7744145376007392,
+            "ci_high": 0.7971463207605647,
             "n": 5000,
-            "successes": 3960
+            "successes": 3930
           },
           "left_only": 0,
           "right_only": 0,
-          "both": 3960,
-          "neither": 1040
+          "both": 3930,
+          "neither": 1070
         },
         "steps": {
           "mean": 0.0,
@@ -589,8 +685,8 @@
           "n_samples": 10000,
           "seed": 20261013,
           "alpha": 0.05,
-          "left_mean": 9.421,
-          "right_mean": 9.421,
+          "left_mean": 9.368,
+          "right_mean": 9.368,
           "wins": 0,
           "losses": 0,
           "ties": 5000
@@ -598,6 +694,54 @@
       },
       "C5_vs_C4": {
         "n_pairs": 5000,
+        "success_clustered": {
+          "mean": -0.002,
+          "ci_low": -0.005,
+          "ci_high": 0.0,
+          "n": 1000,
+          "n_samples": 10000,
+          "seed": 20261013,
+          "alpha": 0.05,
+          "unit": "scene",
+          "n_scenes": 1000,
+          "n_paired_rows": 5000,
+          "left_rate": 0.786,
+          "right_rate": 0.788
+        },
+        "per_seed": {
+          "per_seed": {
+            "0": {
+              "mean": -0.002,
+              "n": 1000
+            },
+            "1": {
+              "mean": -0.002,
+              "n": 1000
+            },
+            "2": {
+              "mean": -0.002,
+              "n": 1000
+            },
+            "3": {
+              "mean": -0.002,
+              "n": 1000
+            },
+            "4": {
+              "mean": -0.002,
+              "n": 1000
+            }
+          },
+          "pooled_mean": -0.002,
+          "seed_spread": 0.0,
+          "seed_t_ci": {
+            "mean": -0.002,
+            "ci_low": -0.002,
+            "ci_high": -0.002,
+            "df": 4,
+            "sem": 0.0
+          },
+          "n": 5000
+        },
         "success": {
           "mean": -0.002,
           "ci_low": -0.0034,
@@ -606,26 +750,26 @@
           "n_samples": 10000,
           "seed": 20261013,
           "alpha": 0.05,
-          "left_rate": 0.792,
-          "right_rate": 0.794,
+          "left_rate": 0.786,
+          "right_rate": 0.788,
           "left_wilson": {
-            "rate": 0.792,
-            "ci_low": 0.780527576387093,
-            "ci_high": 0.80302406921256,
+            "rate": 0.786,
+            "ci_low": 0.7744145376007392,
+            "ci_high": 0.7971463207605647,
             "n": 5000,
-            "successes": 3960
+            "successes": 3930
           },
           "right_wilson": {
-            "rate": 0.794,
-            "ci_low": 0.7825660779184023,
-            "ci_high": 0.8049824967607004,
+            "rate": 0.788,
+            "ci_low": 0.7764518105190151,
+            "ci_high": 0.7991059769217385,
             "n": 5000,
-            "successes": 3970
+            "successes": 3940
           },
           "left_only": 0,
           "right_only": 10,
-          "both": 3960,
-          "neither": 1030
+          "both": 3930,
+          "neither": 1060
         },
         "steps": {
           "mean": -0.032,
@@ -635,8 +779,8 @@
           "n_samples": 10000,
           "seed": 20261013,
           "alpha": 0.05,
-          "left_mean": 9.421,
-          "right_mean": 9.453,
+          "left_mean": 9.368,
+          "right_mean": 9.4,
           "wins": 20,
           "losses": 35,
           "ties": 4945
@@ -644,48 +788,96 @@
       },
       "C5_vs_C1": {
         "n_pairs": 5000,
+        "success_clustered": {
+          "mean": 0.158,
+          "ci_low": 0.135,
+          "ci_high": 0.182,
+          "n": 1000,
+          "n_samples": 10000,
+          "seed": 20261013,
+          "alpha": 0.05,
+          "unit": "scene",
+          "n_scenes": 1000,
+          "n_paired_rows": 5000,
+          "left_rate": 0.786,
+          "right_rate": 0.628
+        },
+        "per_seed": {
+          "per_seed": {
+            "0": {
+              "mean": 0.158,
+              "n": 1000
+            },
+            "1": {
+              "mean": 0.158,
+              "n": 1000
+            },
+            "2": {
+              "mean": 0.158,
+              "n": 1000
+            },
+            "3": {
+              "mean": 0.158,
+              "n": 1000
+            },
+            "4": {
+              "mean": 0.158,
+              "n": 1000
+            }
+          },
+          "pooled_mean": 0.158,
+          "seed_spread": 0.0,
+          "seed_t_ci": {
+            "mean": 0.158,
+            "ci_low": 0.158,
+            "ci_high": 0.158,
+            "df": 4,
+            "sem": 0.0
+          },
+          "n": 5000
+        },
         "success": {
-          "mean": 0.16,
-          "ci_low": 0.1496,
-          "ci_high": 0.1706,
+          "mean": 0.158,
+          "ci_low": 0.1476,
+          "ci_high": 0.1686,
           "n": 5000,
           "n_samples": 10000,
           "seed": 20261013,
           "alpha": 0.05,
-          "left_rate": 0.792,
-          "right_rate": 0.632,
+          "left_rate": 0.786,
+          "right_rate": 0.628,
           "left_wilson": {
-            "rate": 0.792,
-            "ci_low": 0.780527576387093,
-            "ci_high": 0.80302406921256,
+            "rate": 0.786,
+            "ci_low": 0.7744145376007392,
+            "ci_high": 0.7971463207605647,
             "n": 5000,
-            "successes": 3960
+            "successes": 3930
           },
           "right_wilson": {
-            "rate": 0.632,
-            "ci_low": 0.6185358053477625,
-            "ci_high": 0.6452615138959161,
+            "rate": 0.628,
+            "ci_low": 0.6145090571458138,
+            "ci_high": 0.6412944039389656,
             "n": 5000,
-            "successes": 3160
+            "successes": 3140
           },
-          "left_only": 815,
-          "right_only": 15,
-          "both": 3145,
-          "neither": 1025
+          "left_only": 810,
+          "right_only": 20,
+          "both": 3120,
+          "neither": 1050
         },
         "steps": {
-          "mean": -2.055,
-          "ci_low": -2.3262,
-          "ci_high": -1.7902,
+          "mean": -2.082,
+          "ci_low": -2.356,
+          "ci_high": -1.8172,
           "n": 5000,
           "n_samples": 10000,
           "seed": 20261013,
           "alpha": 0.05,
-          "left_mean": 9.421,
-          "right_mean": 11.476,
-          "wins": 785,
+          "left_mean": 9.368,
+          "right_mean": 11.45,
+          "wins": 775,
           "losses": 615,
-          "ties": 3600
+          "ties": 3610
         }
       }
     }
@@ -711,26 +903,26 @@
       {
         "level": 3,
         "n_all": 1000,
-        "success_all": 0.98,
+        "success_all": 0.97,
         "n_feasible": 1000,
-        "success_feasible": 0.98,
-        "collision_rate": 0.02
+        "success_feasible": 0.97,
+        "collision_rate": 0.03
       },
       {
         "level": 4,
         "n_all": 1000,
-        "success_all": 0.915,
+        "success_all": 0.91,
         "n_feasible": 940,
-        "success_feasible": 0.973404255319149,
-        "collision_rate": 0.02
+        "success_feasible": 0.9680851063829787,
+        "collision_rate": 0.025
       },
       {
         "level": 5,
         "n_all": 1000,
-        "success_all": 0.245,
+        "success_all": 0.23,
         "n_feasible": 900,
-        "success_feasible": 0.2722222222222222,
-        "collision_rate": 0.67
+        "success_feasible": 0.25555555555555554,
+        "collision_rate": 0.685
       }
     ],
     "by_level_feasible": [
@@ -757,31 +949,31 @@
       {
         "level": 3,
         "n_all": 1000,
-        "success_all": 0.98,
+        "success_all": 0.97,
         "n_feasible": 1000,
-        "success_feasible": 0.98,
-        "collision_rate": 0.02,
-        "success": 0.98,
+        "success_feasible": 0.97,
+        "collision_rate": 0.03,
+        "success": 0.97,
         "n": 1000
       },
       {
         "level": 4,
         "n_all": 1000,
-        "success_all": 0.915,
+        "success_all": 0.91,
         "n_feasible": 940,
-        "success_feasible": 0.973404255319149,
-        "collision_rate": 0.02,
-        "success": 0.973404255319149,
+        "success_feasible": 0.9680851063829787,
+        "collision_rate": 0.025,
+        "success": 0.9680851063829787,
         "n": 940
       },
       {
         "level": 5,
         "n_all": 1000,
-        "success_all": 0.245,
+        "success_all": 0.23,
         "n_feasible": 900,
-        "success_feasible": 0.2722222222222222,
-        "collision_rate": 0.67,
-        "success": 0.2722222222222222,
+        "success_feasible": 0.25555555555555554,
+        "collision_rate": 0.685,
+        "success": 0.25555555555555554,
         "n": 900
       }
     ]
@@ -801,10 +993,10 @@
       {
         "method": "rollout_greedy[language]",
         "n": 1000,
-        "success": 0.72,
-        "ci_low": 0.6913693871201185,
-        "ci_high": 0.7469467775018697,
-        "collision_rate": 0.19,
+        "success": 0.715,
+        "ci_low": 0.686239728877674,
+        "ci_high": 0.7421147047301779,
+        "collision_rate": 0.195,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
@@ -815,8 +1007,8 @@
         "ci_low": 0.7170828966141466,
         "ci_high": 0.771041923078522,
         "collision_rate": 0.165,
-        "episodes_with_deadline_miss": 81,
-        "mean_deadline_misses": 0.224
+        "episodes_with_deadline_miss": 80,
+        "mean_deadline_misses": 0.22
       },
       {
         "method": "static_astar[language]",
@@ -843,10 +1035,10 @@
       {
         "method": "rollout_greedy[language]",
         "n": 935,
-        "success": 0.7700534759358288,
-        "ci_low": 0.7420083437945512,
-        "ci_high": 0.795888570871352,
-        "collision_rate": 0.20320855614973263,
+        "success": 0.7647058823529411,
+        "ci_low": 0.7364672080384632,
+        "ci_high": 0.7907782825746498,
+        "collision_rate": 0.20855614973262032,
         "episodes_with_deadline_miss": 0,
         "mean_deadline_misses": 0.0
       },
@@ -857,8 +1049,8 @@
         "ci_low": 0.7698086989881551,
         "ci_high": 0.8213453359416988,
         "collision_rate": 0.17647058823529413,
-        "episodes_with_deadline_miss": 81,
-        "mean_deadline_misses": 0.23957219251336898
+        "episodes_with_deadline_miss": 80,
+        "mean_deadline_misses": 0.23529411764705882
       },
       {
         "method": "static_astar[language]",
@@ -950,10 +1142,10 @@
         {
           "level": 5,
           "n_all": 200,
-          "success_all": 0.025,
+          "success_all": 0.0,
           "n_feasible": 180,
-          "success_feasible": 0.027777777777777776,
-          "collision_rate": 0.875
+          "success_feasible": 0.0,
+          "collision_rate": 0.9
         }
       ],
       "space_time_astar[language]": [
@@ -1044,16 +1236,64 @@
     "contrasts": {
       "C5_vs_rollout_greedy[language]": {
         "n_pairs": 1000,
+        "success_clustered": {
+          "mean": 0.07,
+          "ci_low": 0.03,
+          "ci_high": 0.115,
+          "n": 200,
+          "n_samples": 10000,
+          "seed": 20261013,
+          "alpha": 0.05,
+          "unit": "scene",
+          "n_scenes": 200,
+          "n_paired_rows": 1000,
+          "left_rate": 0.785,
+          "right_rate": 0.715
+        },
+        "per_seed": {
+          "per_seed": {
+            "0": {
+              "mean": 0.07,
+              "n": 200
+            },
+            "1": {
+              "mean": 0.07,
+              "n": 200
+            },
+            "2": {
+              "mean": 0.07,
+              "n": 200
+            },
+            "3": {
+              "mean": 0.07,
+              "n": 200
+            },
+            "4": {
+              "mean": 0.07,
+              "n": 200
+            }
+          },
+          "pooled_mean": 0.07,
+          "seed_spread": 0.0,
+          "seed_t_ci": {
+            "mean": 0.07,
+            "ci_low": 0.07,
+            "ci_high": 0.07,
+            "df": 4,
+            "sem": 0.0
+          },
+          "n": 1000
+        },
         "success": {
-          "mean": 0.065,
-          "ci_low": 0.046,
-          "ci_high": 0.084,
+          "mean": 0.07,
+          "ci_low": 0.051,
+          "ci_high": 0.089,
           "n": 1000,
           "n_samples": 10000,
           "seed": 20261013,
           "alpha": 0.05,
           "left_rate": 0.785,
-          "right_rate": 0.72,
+          "right_rate": 0.715,
           "left_wilson": {
             "rate": 0.785,
             "ci_low": 0.7584716775357235,
@@ -1062,34 +1302,82 @@
             "successes": 785
           },
           "right_wilson": {
-            "rate": 0.72,
-            "ci_low": 0.6913693871201185,
-            "ci_high": 0.7469467775018697,
+            "rate": 0.715,
+            "ci_low": 0.686239728877674,
+            "ci_high": 0.7421147047301779,
             "n": 1000,
-            "successes": 720
+            "successes": 715
           },
-          "left_only": 80,
+          "left_only": 85,
           "right_only": 15,
-          "both": 705,
+          "both": 700,
           "neither": 200
         },
         "steps": {
-          "mean": -7.55,
-          "ci_low": -8.022,
-          "ci_high": -7.085,
+          "mean": -7.455,
+          "ci_low": -7.924,
+          "ci_high": -6.992,
           "n": 1000,
           "n_samples": 10000,
           "seed": 20261013,
           "alpha": 0.05,
-          "left_mean": 9.63,
-          "right_mean": 17.18,
-          "wins": 40,
-          "losses": 850,
+          "left_mean": 9.6,
+          "right_mean": 17.055,
+          "wins": 45,
+          "losses": 845,
           "ties": 110
         }
       },
       "C5_vs_space_time_astar[language]": {
         "n_pairs": 1000,
+        "success_clustered": {
+          "mean": 0.04,
+          "ci_low": 0.0,
+          "ci_high": 0.08,
+          "n": 200,
+          "n_samples": 10000,
+          "seed": 20261013,
+          "alpha": 0.05,
+          "unit": "scene",
+          "n_scenes": 200,
+          "n_paired_rows": 1000,
+          "left_rate": 0.785,
+          "right_rate": 0.745
+        },
+        "per_seed": {
+          "per_seed": {
+            "0": {
+              "mean": 0.04,
+              "n": 200
+            },
+            "1": {
+              "mean": 0.04,
+              "n": 200
+            },
+            "2": {
+              "mean": 0.04,
+              "n": 200
+            },
+            "3": {
+              "mean": 0.04,
+              "n": 200
+            },
+            "4": {
+              "mean": 0.04,
+              "n": 200
+            }
+          },
+          "pooled_mean": 0.04,
+          "seed_spread": 0.0,
+          "seed_t_ci": {
+            "mean": 0.04,
+            "ci_low": 0.04,
+            "ci_high": 0.04,
+            "df": 4,
+            "sem": 0.0
+          },
+          "n": 1000
+        },
         "success": {
           "mean": 0.04,
           "ci_low": 0.022,
@@ -1120,15 +1408,15 @@
           "neither": 190
         },
         "steps": {
-          "mean": -2.595,
-          "ci_low": -2.999,
-          "ci_high": -2.21,
+          "mean": -2.615,
+          "ci_low": -3.018,
+          "ci_high": -2.234,
           "n": 1000,
           "n_samples": 10000,
           "seed": 20261013,
           "alpha": 0.05,
-          "left_mean": 9.63,
-          "right_mean": 12.225,
+          "left_mean": 9.6,
+          "right_mean": 12.215,
           "wins": 50,
           "losses": 800,
           "ties": 150
@@ -1136,6 +1424,54 @@
       },
       "C5_vs_static_astar[language]": {
         "n_pairs": 1000,
+        "success_clustered": {
+          "mean": 0.055,
+          "ci_low": 0.02,
+          "ci_high": 0.09,
+          "n": 200,
+          "n_samples": 10000,
+          "seed": 20261013,
+          "alpha": 0.05,
+          "unit": "scene",
+          "n_scenes": 200,
+          "n_paired_rows": 1000,
+          "left_rate": 0.785,
+          "right_rate": 0.73
+        },
+        "per_seed": {
+          "per_seed": {
+            "0": {
+              "mean": 0.055,
+              "n": 200
+            },
+            "1": {
+              "mean": 0.055,
+              "n": 200
+            },
+            "2": {
+              "mean": 0.055,
+              "n": 200
+            },
+            "3": {
+              "mean": 0.055,
+              "n": 200
+            },
+            "4": {
+              "mean": 0.055,
+              "n": 200
+            }
+          },
+          "pooled_mean": 0.055,
+          "seed_spread": 0.0,
+          "seed_t_ci": {
+            "mean": 0.055,
+            "ci_low": 0.055,
+            "ci_high": 0.055,
+            "df": 4,
+            "sem": 0.0
+          },
+          "n": 1000
+        },
         "success": {
           "mean": 0.055,
           "ci_low": 0.04,
@@ -1166,18 +1502,18 @@
           "neither": 210
         },
         "steps": {
-          "mean": -1.86,
-          "ci_low": -2.087,
-          "ci_high": -1.634,
+          "mean": -1.87,
+          "ci_low": -2.088,
+          "ci_high": -1.654,
           "n": 1000,
           "n_samples": 10000,
           "seed": 20261013,
           "alpha": 0.05,
-          "left_mean": 9.63,
-          "right_mean": 11.49,
+          "left_mean": 9.6,
+          "right_mean": 11.47,
           "wins": 60,
-          "losses": 800,
-          "ties": 140
+          "losses": 795,
+          "ties": 145
         }
       }
     }
@@ -1188,75 +1524,85 @@
         {
           "degradation": "combined_mild",
           "n": 1500,
-          "success": 0.79,
-          "ci_low": 0.7686595667316524,
-          "ci_high": 0.809858809139849,
-          "collision_rate": 0.15,
+          "success": 0.68,
+          "ci_low": 0.6559589233528251,
+          "ci_high": 0.7031214478777621,
+          "collision_rate": 0.32,
           "episodes_with_deadline_miss": 0,
           "mean_deadline_misses": 0.0
         },
         {
           "degradation": "combined_severe",
           "n": 1500,
-          "success": 0.7433333333333333,
-          "ci_low": 0.7206264148419689,
-          "ci_high": 0.7647970499697506,
-          "collision_rate": 0.19,
+          "success": 0.5933333333333334,
+          "ci_low": 0.5682667981729925,
+          "ci_high": 0.6179230239465712,
+          "collision_rate": 0.4066666666666667,
           "episodes_with_deadline_miss": 0,
           "mean_deadline_misses": 0.0
         },
         {
           "degradation": "delay_1",
           "n": 1500,
-          "success": 0.8566666666666667,
-          "ci_low": 0.8380214802399902,
-          "ci_high": 0.8734896257169137,
-          "collision_rate": 0.08333333333333333,
+          "success": 0.83,
+          "ci_low": 0.8101529541203097,
+          "ci_high": 0.8481610598024331,
+          "collision_rate": 0.11,
           "episodes_with_deadline_miss": 0,
           "mean_deadline_misses": 0.0
         },
         {
           "degradation": "delay_2",
           "n": 1500,
-          "success": 0.8233333333333334,
-          "ci_low": 0.803213537904668,
-          "ci_high": 0.8418012030095346,
-          "collision_rate": 0.11666666666666667,
+          "success": 0.7866666666666666,
+          "ci_low": 0.7652162082400852,
+          "ci_high": 0.8066525311271459,
+          "collision_rate": 0.15333333333333332,
           "episodes_with_deadline_miss": 0,
           "mean_deadline_misses": 0.0
         },
         {
           "degradation": "delay_3",
           "n": 1500,
-          "success": 0.84,
-          "ci_low": 0.8205820026242652,
-          "ci_high": 0.8576809208112881,
-          "collision_rate": 0.1,
+          "success": 0.7833333333333333,
+          "ci_low": 0.7617748829375193,
+          "ci_high": 0.8034442199254419,
+          "collision_rate": 0.15666666666666668,
           "episodes_with_deadline_miss": 0,
           "mean_deadline_misses": 0.0
         },
         {
           "degradation": "noise_pos_0.005",
           "n": 1500,
-          "success": 0.9133333333333333,
-          "ci_low": 0.898018443086047,
-          "ci_high": 0.9265364834434493,
-          "collision_rate": 0.02666666666666667,
+          "success": 0.8833333333333333,
+          "ci_low": 0.8660993511680581,
+          "ci_high": 0.8986088468230069,
+          "collision_rate": 0.07,
           "episodes_with_deadline_miss": 0,
           "mean_deadline_misses": 0.0
         },
         {
           "degradation": "noise_pos_0.01",
           "n": 1500,
-          "success": 0.8866666666666667,
-          "ci_low": 0.8696265976819937,
-          "ci_high": 0.9017312368133417,
-          "collision_rate": 0.05333333333333334,
+          "success": 0.8466666666666667,
+          "ci_low": 0.8275487571617591,
+          "ci_high": 0.8640134392823345,
+          "collision_rate": 0.13333333333333333,
           "episodes_with_deadline_miss": 0,
           "mean_deadline_misses": 0.0
         },
         {
           "degradation": "noise_vel_0.02",
+          "n": 1500,
+          "success": 0.8733333333333333,
+          "ci_low": 0.855542284462282,
+          "ci_high": 0.8892170040159726,
+          "collision_rate": 0.10333333333333333,
+          "episodes_with_deadline_miss": 0,
+          "mean_deadline_misses": 0.0
+        },
+        {
+          "degradation": "perfect",
           "n": 1500,
           "success": 0.92,
           "ci_low": 0.9051734054375523,
@@ -1266,52 +1612,42 @@
           "mean_deadline_misses": 0.0
         },
         {
-          "degradation": "perfect",
-          "n": 1500,
-          "success": 0.9233333333333333,
-          "ci_low": 0.9087611285659495,
-          "ci_high": 0.935742707476357,
-          "collision_rate": 0.016666666666666666,
-          "episodes_with_deadline_miss": 0,
-          "mean_deadline_misses": 0.0
-        },
-        {
           "degradation": "serve_2",
           "n": 1500,
-          "success": 0.89,
-          "ci_low": 0.8731582163304132,
-          "ci_high": 0.904849254669192,
-          "collision_rate": 0.05,
+          "success": 0.7766666666666666,
+          "ci_low": 0.7548981975239429,
+          "ci_high": 0.7970216323304778,
+          "collision_rate": 0.22333333333333333,
           "episodes_with_deadline_miss": 0,
           "mean_deadline_misses": 0.0
         },
         {
           "degradation": "serve_3",
           "n": 1500,
-          "success": 0.85,
-          "ci_low": 0.8310365711295135,
-          "ci_high": 0.8671752618188503,
-          "collision_rate": 0.08666666666666667,
+          "success": 0.72,
+          "ci_low": 0.6967376092775095,
+          "ci_high": 0.742138400004319,
+          "collision_rate": 0.28,
           "episodes_with_deadline_miss": 0,
           "mean_deadline_misses": 0.0
         },
         {
           "degradation": "visibility_0.6",
           "n": 1500,
-          "success": 0.9233333333333333,
-          "ci_low": 0.9087611285659495,
-          "ci_high": 0.935742707476357,
-          "collision_rate": 0.016666666666666666,
+          "success": 0.92,
+          "ci_low": 0.9051734054375523,
+          "ci_high": 0.9326807941004843,
+          "collision_rate": 0.02,
           "episodes_with_deadline_miss": 0,
           "mean_deadline_misses": 0.0
         },
         {
           "degradation": "visibility_0.8",
           "n": 1500,
-          "success": 0.9233333333333333,
-          "ci_low": 0.9087611285659495,
-          "ci_high": 0.935742707476357,
-          "collision_rate": 0.016666666666666666,
+          "success": 0.92,
+          "ci_low": 0.9051734054375523,
+          "ci_high": 0.9326807941004843,
+          "collision_rate": 0.02,
           "episodes_with_deadline_miss": 0,
           "mean_deadline_misses": 0.0
         }
@@ -1320,20 +1656,20 @@
         {
           "degradation": "combined_severe",
           "n": 180,
-          "success": 0.6944444444444444,
-          "ci_low": 0.6236691202563739,
-          "ci_high": 0.7570934492599924,
-          "collision_rate": 0.08333333333333333,
-          "episodes_with_deadline_miss": 5,
-          "mean_deadline_misses": 0.4166666666666667
+          "success": 0.19444444444444445,
+          "ci_low": 0.14326319874946408,
+          "ci_high": 0.25839562058196036,
+          "collision_rate": 0.6944444444444444,
+          "episodes_with_deadline_miss": 10,
+          "mean_deadline_misses": 0.4444444444444444
         },
         {
           "degradation": "delay_2",
           "n": 180,
-          "success": 0.7777777777777778,
-          "ci_low": 0.7115961997536944,
-          "ci_high": 0.832350328126829,
-          "collision_rate": 0.1111111111111111,
+          "success": 0.6944444444444444,
+          "ci_low": 0.6236691202563739,
+          "ci_high": 0.7570934492599924,
+          "collision_rate": 0.19444444444444445,
           "episodes_with_deadline_miss": 0,
           "mean_deadline_misses": 0.0
         },
@@ -1354,8 +1690,8 @@
     "format": "oops-v12-gpu-profile-1.0",
     "dynamic_scenarios": {
       "episodes": 50,
-      "wall_time_s": 0.13606285000423668,
-      "episodes_per_second": 367.4772356924988,
+      "wall_time_s": 0.16680251799698453,
+      "episodes_per_second": 299.75566676339923,
       "mean_steps": 9.18,
       "success_rate": 0.94,
       "program_id": "P002",

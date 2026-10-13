@@ -136,6 +136,9 @@ def run_episode(env: DynamicChamber, policy, *,
     obs = env.reset()
     if observer is not None:
         obs = observer.observe(env)
+    # v1.2.1: the execution shield filters commands through the *same*
+    # observation the policy receives (causal), never ground-truth futures.
+    env.shield_observer = observer
     min_clearance = surface_clearance(env, env.position, env.time_s)
 
     while not env.done and env.step_index < env.max_steps:
