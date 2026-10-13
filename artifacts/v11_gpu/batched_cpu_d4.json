@@ -1,0 +1,51 @@
+{
+  "environment": {
+    "python": "3.11.2",
+    "platform": "Linux-6.12.96+rpt-rpi-2712-aarch64-with-glibc2.36",
+    "torch": "2.7.1+cpu"
+  },
+  "parameters": {
+    "device": "cpu",
+    "dtype": "float64",
+    "batch_size": 1024,
+    "program_width": 12,
+    "max_depth": 4,
+    "starting_budget": 256,
+    "repeats": 1,
+    "compile": false,
+    "compile_mode": "default",
+    "skip_reference": false,
+    "verbose": true,
+    "output": "/tmp/opencode/oops_v10/batched_cpu_d4.json"
+  },
+  "reference_seconds": 1.3819892770006845,
+  "batched_seconds": [
+    585.7438955680009
+  ],
+  "median_batched_seconds": 585.7438955680009,
+  "speedup": 0.0023593746131328566,
+  "stats": {
+    "gpu_episodes": 12040,
+    "gpu_batches": 25,
+    "device_seconds": 585.6825,
+    "host_seconds": 585.7436,
+    "cache_entries": 2818
+  },
+  "programs": {
+    "P001": [
+      "GOAL"
+    ],
+    "P002": [
+      "GOAL",
+      "CHOOSE_AXIS"
+    ],
+    "P003": [
+      "WAIT_GAP",
+      "CALL:P002"
+    ],
+    "P004": [
+      "CONTINUE",
+      "CALL:P003"
+    ]
+  }
+}

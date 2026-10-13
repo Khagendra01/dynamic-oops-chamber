@@ -1,0 +1,213 @@
+{
+  "summary": {
+    "env": {
+      "python": "3.12.10 (main, May 21 2025, 23:34:56) [GCC 12.2.0]",
+      "pytorch": "2.7.1+cu126",
+      "cuda_compiled": "12.6",
+      "cuda_available": true,
+      "device_name": "NVIDIA L40S",
+      "capability": [
+        8,
+        9
+      ]
+    },
+    "tests": {
+      "returncode": 0,
+      "tail": []
+    },
+    "cpu_parity": {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "scenes": 100,
+      "success": 97,
+      "equivalent": true
+    },
+    "cuda_parity": {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "scenes": 100,
+      "success": 97,
+      "equivalent": true
+    },
+    "commands": {
+      "cpu_parity": {
+        "returncode": 0,
+        "elapsed_s": 3.573,
+        "tail": "}"
+      },
+      "cuda_parity": {
+        "returncode": 0,
+        "elapsed_s": 4.962,
+        "tail": "}"
+      },
+      "cpu_run": {
+        "returncode": 0,
+        "elapsed_s": 5.328,
+        "tail": "Saved: cpu_run.json"
+      },
+      "cuda_512_f64": {
+        "returncode": 0,
+        "elapsed_s": 5.262,
+        "tail": "Saved: cuda_512_f64.json"
+      },
+      "cuda_1024_f32": {
+        "returncode": 0,
+        "elapsed_s": 5.802,
+        "tail": "Saved: cuda_1024_f32.json"
+      }
+    },
+    "cpu_run": {
+      "version": "v1.0",
+      "device": "cpu",
+      "gpu_name": null,
+      "pytorch": "2.7.1+cu126",
+      "dtype": "float64",
+      "num_scenes": 512,
+      "seed_start": 100,
+      "num_batches": 1,
+      "elapsed_s": 2.890535,
+      "success": 499,
+      "collisions": 13,
+      "interventions": 13,
+      "simulated_steps": 6677
+    },
+    "cuda_512_f64": {
+      "version": "v1.0",
+      "device": "cuda",
+      "gpu_name": "NVIDIA L40S",
+      "pytorch": "2.7.1+cu126",
+      "dtype": "float64",
+      "num_scenes": 512,
+      "seed_start": 100,
+      "num_batches": 1,
+      "elapsed_s": 2.076567,
+      "success": 499,
+      "collisions": 13,
+      "interventions": 13,
+      "simulated_steps": 6677
+    },
+    "cuda_1024_f32": {
+      "version": "v1.0",
+      "device": "cuda",
+      "gpu_name": "NVIDIA L40S",
+      "pytorch": "2.7.1+cu126",
+      "dtype": "float32",
+      "num_scenes": 1024,
+      "seed_start": 100,
+      "num_batches": 1,
+      "elapsed_s": 2.482511,
+      "success": 997,
+      "collisions": 27,
+      "interventions": 27,
+      "simulated_steps": 13400
+    }
+  },
+  "artifacts": {
+    "cpu_parity.json": {
+      "device": "cpu",
+      "dtype": "torch.float64",
+      "scenes": 100,
+      "success": 97,
+      "mismatches": [],
+      "equivalent": true
+    },
+    "cuda_parity.json": {
+      "device": "cuda",
+      "dtype": "torch.float64",
+      "scenes": 100,
+      "success": 97,
+      "mismatches": [],
+      "equivalent": true
+    },
+    "cpu_run.json": {
+      "version": "v1.0",
+      "device": "cpu",
+      "gpu_name": null,
+      "pytorch": "2.7.1+cu126",
+      "dtype": "float64",
+      "num_scenes": 512,
+      "seed_start": 100,
+      "num_batches": 1,
+      "elapsed_s": 2.890535,
+      "success": 499,
+      "collisions": 13,
+      "interventions": 13,
+      "simulated_steps": 6677,
+      "runs": [
+        {
+          "batch_scenes": 512,
+          "success": 499,
+          "collisions": 13,
+          "interventions": 13,
+          "simulated_steps": 6677,
+          "elapsed_s": 2.890535
+        }
+      ],
+      "notes": [
+        "Elapsed time excludes scene construction and TorchChamberBatch initialization.",
+        "Contains interpreted Torch primitives rather than original OOPS program synthesis.",
+        "Simulation uses exact geometric state and conservative sphere/AABB collision geometry."
+      ]
+    },
+    "cuda_512_f64.json": {
+      "version": "v1.0",
+      "device": "cuda",
+      "gpu_name": "NVIDIA L40S",
+      "pytorch": "2.7.1+cu126",
+      "dtype": "float64",
+      "num_scenes": 512,
+      "seed_start": 100,
+      "num_batches": 1,
+      "elapsed_s": 2.076567,
+      "success": 499,
+      "collisions": 13,
+      "interventions": 13,
+      "simulated_steps": 6677,
+      "runs": [
+        {
+          "batch_scenes": 512,
+          "success": 499,
+          "collisions": 13,
+          "interventions": 13,
+          "simulated_steps": 6677,
+          "elapsed_s": 2.076567
+        }
+      ],
+      "notes": [
+        "Elapsed time excludes scene construction and TorchChamberBatch initialization.",
+        "Contains interpreted Torch primitives rather than original OOPS program synthesis.",
+        "Simulation uses exact geometric state and conservative sphere/AABB collision geometry."
+      ]
+    },
+    "cuda_1024_f32.json": {
+      "version": "v1.0",
+      "device": "cuda",
+      "gpu_name": "NVIDIA L40S",
+      "pytorch": "2.7.1+cu126",
+      "dtype": "float32",
+      "num_scenes": 1024,
+      "seed_start": 100,
+      "num_batches": 1,
+      "elapsed_s": 2.482511,
+      "success": 997,
+      "collisions": 27,
+      "interventions": 27,
+      "simulated_steps": 13400,
+      "runs": [
+        {
+          "batch_scenes": 1024,
+          "success": 997,
+          "collisions": 27,
+          "interventions": 27,
+          "simulated_steps": 13400,
+          "elapsed_s": 2.482511
+        }
+      ],
+      "notes": [
+        "Elapsed time excludes scene construction and TorchChamberBatch initialization.",
+        "Contains interpreted Torch primitives rather than original OOPS program synthesis.",
+        "Simulation uses exact geometric state and conservative sphere/AABB collision geometry."
+      ]
+    }
+  }
+}
